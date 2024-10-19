@@ -8,7 +8,7 @@ A simple and user friendly tool for downloading Operating system disk images
 
 #### •Will there ever be a Linux and/or MacOS release?
 
-There might but keep in mind that i am prioritizing Windows, even though i am a Linux user, as the majority of OS market share is held by windows, meaning most users will be windows users. But yes there will probably be one in the near future
+There might but keep in mind that i am prioritizing Windows even though i am a Linux user, as the majority of OS market share is held by windows, meaning most users will be windows users. But yes there will probably be one in the near future
 
 
 
