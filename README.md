@@ -4,6 +4,15 @@ A simple and user friendly tool for downloading Operating system disk images
 
 ![image](https://github.com/user-attachments/assets/249830c3-6606-4504-bd42-b05436897b83)
 
+
+### Requires windows 7 or newer with .NET framework 4.7.2 
+can be run on Vista using this guide to get .NET framework 4.7.2 installed: https://msfn.org/board/topic/178673-tutorial-how-to-install-net-framework-472-on-windows-vista/
+
+
+
+
+
+
 ## FAQ
 
 #### •Will there ever be a Linux and/or MacOS release?
