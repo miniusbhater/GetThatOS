@@ -8,11 +8,14 @@ A simple and user friendly tool for downloading Operating system disk images
 ### Requires windows 7 or newer with .NET framework 4.7.2 
 Can be run on Vista using this guide to get .NET framework 4.7.2 installed: https://msfn.org/board/topic/178673-tutorial-how-to-install-net-framework-472-on-windows-vista/
 
-#### Linux support
+### How to run on linux
 
-Runs almost perfectly through Wine and is fully functunal
+First install Wine using the respective guide for your distro
 
+#### Fedora
 
+Fedora 39:
+```dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/39/winehq.repo```
 
 
 
