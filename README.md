@@ -8,6 +8,8 @@ A simple and user friendly tool for downloading Operating system disk images
 ### Requires windows 7 or newer with .NET framework 4.7.2 
 Can be run on Vista using this guide to get .NET framework 4.7.2 installed: https://msfn.org/board/topic/178673-tutorial-how-to-install-net-framework-472-on-windows-vista/
 
+
+
 ### How to run on linux
 
 First install Wine. Guides can be found at https://gitlab.winehq.org/wine/wine/-/wikis/Download
