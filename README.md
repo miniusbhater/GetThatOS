@@ -10,34 +10,13 @@ Can be run on Vista using this guide to get .NET framework 4.7.2 installed: http
 
 ### How to run on linux
 
-First install Wine using the respective guide for your distro
+First install Wine. Guides can be found at https://gitlab.winehq.org/wine/wine/-/wikis/Download
 
-#### Fedora
+Then open your terminal then type `wine` and the directory of GetThatOS.exe and hit enter
 
-Fedora 39:
+Then GetThatOS should open and function the same as the native windows release
 
-`dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/39/winehq.repo`
-
-Fedora 40:
-
-`dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/40/winehq.repo`
-
-Fedora 39 and 40
-
-
-`dnf install winehq-stable`
-
-
-`sudo dnf groupinstall "C Development Tools and Libraries"`
-
-`sudo dnf groupinstall "Development Tools"`
-
-
-`PKG_CONFIG_PATH=/usr/lib/pkgconfig CC="ccache gcc -m32" ./configure`
-
-`make`
-
-
+Tested on Manjaro Linux
 
 
 ## FAQ
