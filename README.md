@@ -22,7 +22,7 @@ Fedora 40:
 
 `dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/40/winehq.repo`
 
-
+All fedora:
 
 
 `dnf install winehq-stable`
