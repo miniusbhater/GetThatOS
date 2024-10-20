@@ -16,5 +16,29 @@ namespace GetThatOS.Menus
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MS_Dos dos = new MS_Dos();
+            dos.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ClassicMacOS classmac = new ClassicMacOS();
+            classmac.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Winbetas winbetas = new Winbetas();
+            winbetas.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            winserver winserver = new winserver();
+            winserver.Show();
+        }
     }
 }

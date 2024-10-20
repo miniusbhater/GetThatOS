@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GetThatOS.Install_menus.Windows;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace GetThatOS
         public WIndows()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           windows_1 win1 = new windows_1();
+            win1.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            windows_2 windows_2 = new windows_2();  
+            windows_2.Show();
         }
     }
 }

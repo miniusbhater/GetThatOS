@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,6 +64,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Install menus\Winbetas\Windows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\Winbetas\Windows.Designer.cs">
+      <DependentUpon>Windows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\Windows\windows 1.x.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\Windows\windows 1.x.Designer.cs">
+      <DependentUpon>windows 1.x.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\Windows\windows 2.x.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\Windows\windows 2.x.Designer.cs">
+      <DependentUpon>windows 2.x.cs</DependentUpon>
+    </Compile>
     <Compile Include="main\GetThatOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,11 +94,11 @@
     <Compile Include="main\setting.Designer.cs">
       <DependentUpon>setting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menus\Android.cs">
+    <Compile Include="Menus\ClassicMacOS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menus\Android.Designer.cs">
-      <DependentUpon>Android.cs</DependentUpon>
+    <Compile Include="Menus\ClassicMacOS.Designer.cs">
+      <DependentUpon>ClassicMacOS.cs</DependentUpon>
     </Compile>
     <Compile Include="Menus\Linux.cs">
       <SubType>Form</SubType>
@@ -97,6 +130,12 @@
     <Compile Include="Menus\Winbetas.Designer.cs">
       <DependentUpon>Winbetas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menus\winserver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\winserver.Designer.cs">
+      <DependentUpon>winserver.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Menus\WIndows.cs">
@@ -111,14 +150,23 @@
     <Compile Include="settings\AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Install menus\Winbetas\Windows.resx">
+      <DependentUpon>Windows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\Windows\windows 1.x.resx">
+      <DependentUpon>windows 1.x.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\Windows\windows 2.x.resx">
+      <DependentUpon>windows 2.x.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main\GetThatOS.resx">
       <DependentUpon>GetThatOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main\setting.resx">
       <DependentUpon>setting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menus\Android.resx">
-      <DependentUpon>Android.cs</DependentUpon>
+    <EmbeddedResource Include="Menus\ClassicMacOS.resx">
+      <DependentUpon>ClassicMacOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Linux.resx">
       <DependentUpon>Linux.cs</DependentUpon>
@@ -131,6 +179,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\MS-Dos.resx">
       <DependentUpon>MS-Dos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\Winbetas.resx">
+      <DependentUpon>Winbetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\winserver.resx">
+      <DependentUpon>winserver.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -162,6 +216,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Untitled.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

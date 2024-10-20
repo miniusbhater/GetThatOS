@@ -1,5 +1,4 @@
-﻿using GetThatOS.Install_menus.Winbetas;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,17 +10,11 @@ using System.Windows.Forms;
 
 namespace GetThatOS.Menus
 {
-    public partial class Winbetas : Form
+    public partial class winserver : Form
     {
-        public Winbetas()
+        public winserver()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-           Windows windows = new Windows();
-            windows.Show();
         }
     }
 }
