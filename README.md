@@ -16,6 +16,16 @@ First install Wine using the respective guide for your distro
 
 Fedora 39:
 ```dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/39/winehq.repo```
+Fedora 40:
+```dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/40/winehq.repo```
+
+```dnf install winehq-stable```
+
+```sudo dnf groupinstall "C Development Tools and Libraries"```
+```sudo dnf groupinstall "Development Tools"```
+
+```PKG_CONFIG_PATH=/usr/lib/pkgconfig CC="ccache gcc -m32" ./configure```
+```make```
 
 
 
