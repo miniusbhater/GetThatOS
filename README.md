@@ -14,7 +14,7 @@ Can be run on Vista using this guide to get .NET framework 4.7.2 installed: http
 
 First install Wine. Guides can be found at https://gitlab.winehq.org/wine/wine/-/wikis/Download
 
-Then open your terminal then type `wine` and the directory of GetThatOS.exe and hit enter
+After you have installed Wine open your terminal and type `wine` followed by the directory of GetThatOS.exe and hit enter
 
 Then GetThatOS should open and function the same as the native windows release
 
@@ -25,7 +25,7 @@ Tested on Manjaro Linux
 
 #### •Will there ever be a Linux and/or MacOS release?
 
-There might but keep in mind that i am prioritizing Windows even though i am a Linux user, as the majority of OS market share is held by windows, meaning most users will be windows users. But yes there will probably be one in the near future
+There might, but keep in mind that i am prioritizing Windows even though i am a Linux user, as the majority of OS market share is held by windows, meaning most users will be windows users. But yes there will probably be one in the near future
 
 
 
