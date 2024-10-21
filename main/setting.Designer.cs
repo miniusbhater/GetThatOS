@@ -67,6 +67,7 @@
             this.Name = "setting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Get that OS";
+            this.Load += new System.EventHandler(this.setting_Load);
             this.ResumeLayout(false);
 
         }

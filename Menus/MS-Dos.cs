@@ -16,5 +16,10 @@ namespace GetThatOS.Menus
         {
             InitializeComponent();
         }
+
+        private void MS_Dos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

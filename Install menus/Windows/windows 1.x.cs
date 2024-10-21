@@ -292,5 +292,10 @@ namespace GetThatOS.Install_menus.Windows
             MessageBox.Show("Download complete");
 
         }
+
+        private void windows_1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

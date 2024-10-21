@@ -10,7 +10,6 @@ using System.Linq;
 using System.Net;
 using System.Security.Policy;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -43,6 +42,11 @@ namespace GetThatOS.main
             MessageBox.Show("When you press 'OK' you will start automatically downloading the latest version of GetThatOS");
             System.Diagnostics.Process.Start(fullPath);
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void setting_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

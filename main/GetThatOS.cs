@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using System.Diagnostics;
 using GetThatOS.Menus;
@@ -54,6 +54,11 @@ namespace GetThatOS
         {
             setting sett = new setting();
             sett.Show();
+        }
+
+        private void GetThatOS_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

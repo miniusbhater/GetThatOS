@@ -40,5 +40,10 @@ namespace GetThatOS.Menus
             winserver winserver = new winserver();
             winserver.Show();
         }
+
+        private void More_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

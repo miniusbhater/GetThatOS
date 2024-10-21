@@ -21,5 +21,10 @@ namespace GetThatOS.Menus
         {
 
         }
+
+        private void ClassicMacOS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

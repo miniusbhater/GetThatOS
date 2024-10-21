@@ -184,6 +184,7 @@
             this.Name = "winserver";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Get that OS";
+            this.Load += new System.EventHandler(this.winserver_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

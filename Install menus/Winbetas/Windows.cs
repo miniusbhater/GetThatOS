@@ -187,5 +187,10 @@ namespace GetThatOS.Install_menus.Winbetas
 
             MessageBox.Show("Download complete");
         }
+
+        private void Windows_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

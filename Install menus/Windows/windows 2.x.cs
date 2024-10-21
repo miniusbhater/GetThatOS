@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace GetThatOS.Install_menus.Windows
@@ -204,6 +204,11 @@ namespace GetThatOS.Install_menus.Windows
 
             MessageBox.Show("Download complete");
             
+        }
+
+        private void windows_2_Load(object sender, EventArgs e)
+        {
+
         }
     }
     }

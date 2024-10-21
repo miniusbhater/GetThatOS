@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GetThatOS.Install_menus.OSX;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace GetThatOS.Menus
         public MacOS()
         {
             InitializeComponent();
+        }
+
+        private void MacOS_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           _10 _10 = new _10();
+           _10.Show();
         }
     }
 }

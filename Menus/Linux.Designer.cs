@@ -325,6 +325,7 @@
             this.Name = "Linux";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Get that OS";
+            this.Load += new System.EventHandler(this.Linux_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

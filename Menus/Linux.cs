@@ -16,5 +16,10 @@ namespace GetThatOS.Menus
         {
             InitializeComponent();
         }
+
+        private void Linux_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

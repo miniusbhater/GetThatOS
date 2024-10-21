@@ -92,6 +92,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "MacOS X 10.0";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -304,6 +305,7 @@
             this.Name = "MacOS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Get that OS";
+            this.Load += new System.EventHandler(this.MacOS_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -29,5 +29,10 @@ namespace GetThatOS
             windows_2 windows_2 = new windows_2();  
             windows_2.Show();
         }
+
+        private void WIndows_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -93,6 +93,7 @@
             this.Name = "More";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Get that OS";
+            this.Load += new System.EventHandler(this.More_Load);
             this.ResumeLayout(false);
 
         }

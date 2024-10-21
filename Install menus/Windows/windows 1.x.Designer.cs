@@ -150,6 +150,7 @@
             this.Name = "windows_1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Get that OS";
+            this.Load += new System.EventHandler(this.windows_1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

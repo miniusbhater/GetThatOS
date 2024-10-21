@@ -23,5 +23,10 @@ namespace GetThatOS.Menus
            Windows windows = new Windows();
             windows.Show();
         }
+
+        private void Winbetas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
