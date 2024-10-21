@@ -34,5 +34,11 @@ namespace GetThatOS
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            windows_3 windows_3 = new windows_3();
+            windows_3.Show();
+        }
     }
 }
