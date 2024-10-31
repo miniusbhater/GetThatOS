@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace GetThatOS.Install_menus.OSX
 {
-    public partial class _10 : Form
+    public partial class _108 : Form
     {
-        public _10()
+        public _108()
         {
             InitializeComponent();
         }
@@ -30,9 +30,9 @@ namespace GetThatOS.Install_menus.OSX
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string mac = "https://github.com/breathemonoxide/diskimages/releases/download/osx10.0/osx-10.0.iso";
+            string mac = "https://updates.cdn-apple.com/2021/macos/031-0627-20210614-90D11F33-1A65-42DD-BBEA-E1D9F43A6B3F/InstallMacOSX.dmg";
             string directoryPath = textBox1.Text;
-            string fileName = "osx-10.0.iso";
+            string fileName = "InstallMacOSX.dmg";
             string fullPath = Path.Combine(directoryPath, fileName);
 
             using (WebClient webclient = new WebClient())
@@ -42,10 +42,9 @@ namespace GetThatOS.Install_menus.OSX
             MessageBox.Show("Download complete");
         }
 
-        private void _10_Load(object sender, EventArgs e)
+        private void _108_Load(object sender, EventArgs e)
         {
 
         }
     }
-    }
-
+}

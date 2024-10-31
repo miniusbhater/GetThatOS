@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace GetThatOS.Install_menus.OSX
 {
-    public partial class _10 : Form
+    public partial class _112 : Form
     {
-        public _10()
+        public _112()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog dialog = new FolderBrowserDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
@@ -28,11 +28,11 @@ namespace GetThatOS.Install_menus.OSX
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            string mac = "https://github.com/breathemonoxide/diskimages/releases/download/osx10.0/osx-10.0.iso";
+            string mac = "http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg";
             string directoryPath = textBox1.Text;
-            string fileName = "osx-10.0.iso";
+            string fileName = "InstallOS.dmg";
             string fullPath = Path.Combine(directoryPath, fileName);
 
             using (WebClient webclient = new WebClient())
@@ -41,11 +41,5 @@ namespace GetThatOS.Install_menus.OSX
             }
             MessageBox.Show("Download complete");
         }
-
-        private void _10_Load(object sender, EventArgs e)
-        {
-
-        }
     }
-    }
-
+}
