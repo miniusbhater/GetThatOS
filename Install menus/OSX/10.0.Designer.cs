@@ -99,13 +99,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(233, 62);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(224, 62);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 36);
+            this.label4.Size = new System.Drawing.Size(115, 45);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Large file size!\r\nDownload may take\r\n several minutes depending \r\non network spee" +
-    "d\r\n";
+            this.label4.Text = "Large file size!\r\nDownload may take\r\n several minutes \r\n";
             // 
             // _10
             // 
