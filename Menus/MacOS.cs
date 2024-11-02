@@ -70,5 +70,41 @@ namespace GetThatOS.Menus
             _102 _102 = new _102();
             _102.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            _11 _11 = new _11();
+            _11.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            _12 _12 = new _12();
+            _12.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            _13 _13 = new _13();
+            _13.Show();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            _14 _14 = new _14();
+                _14.Show();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            _15 _15 = new _15();    
+            _15.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            _103 _103 = new _103();
+            _103.Show();
+        }
     }
 }

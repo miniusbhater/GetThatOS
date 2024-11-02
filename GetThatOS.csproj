@@ -104,6 +104,12 @@
     <Compile Include="Install menus\OSX\102.Designer.cs">
       <DependentUpon>102.cs</DependentUpon>
     </Compile>
+    <Compile Include="Install menus\OSX\103.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\103.Designer.cs">
+      <DependentUpon>103.cs</DependentUpon>
+    </Compile>
     <Compile Include="Install menus\OSX\107.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,12 @@
     </Compile>
     <Compile Include="Install menus\OSX\108.Designer.cs">
       <DependentUpon>108.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\11.Designer.cs">
+      <DependentUpon>11.cs</DependentUpon>
     </Compile>
     <Compile Include="Install menus\OSX\110.cs">
       <SubType>Form</SubType>
@@ -133,6 +145,30 @@
     </Compile>
     <Compile Include="Install menus\OSX\112.Designer.cs">
       <DependentUpon>112.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\12.Designer.cs">
+      <DependentUpon>12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\13.Designer.cs">
+      <DependentUpon>13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\14.Designer.cs">
+      <DependentUpon>14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\15.Designer.cs">
+      <DependentUpon>15.cs</DependentUpon>
     </Compile>
     <Compile Include="Install menus\Winbetas\Windows.cs">
       <SubType>Form</SubType>
@@ -235,11 +271,17 @@
     <EmbeddedResource Include="Install menus\OSX\102.resx">
       <DependentUpon>102.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\103.resx">
+      <DependentUpon>103.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Install menus\OSX\107.resx">
       <DependentUpon>107.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Install menus\OSX\108.resx">
       <DependentUpon>108.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\11.resx">
+      <DependentUpon>11.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Install menus\OSX\110.resx">
       <DependentUpon>110.cs</DependentUpon>
@@ -249,6 +291,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Install menus\OSX\112.resx">
       <DependentUpon>112.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\12.resx">
+      <DependentUpon>12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\13.resx">
+      <DependentUpon>13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\14.resx">
+      <DependentUpon>14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\15.resx">
+      <DependentUpon>15.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Install menus\Winbetas\Windows.resx">
       <DependentUpon>Windows.cs</DependentUpon>
@@ -334,6 +388,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Install menus\classmac\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
