@@ -35,11 +35,28 @@ namespace GetThatOS.Install_menus.OSX
             string fileName = "InstallOS.dmg";
             string fullPath = Path.Combine(directoryPath, fileName);
 
+            button2.Enabled = false; 
+            button2.Font = new Font(button2.Font.FontFamily, 9); 
+
             using (WebClient webclient = new WebClient())
             {
-                webclient.DownloadFile(mac, fullPath);
+                webclient.DownloadProgressChanged += (s, ev) =>
+                {
+                    button2.Text = $"Downloading... {ev.ProgressPercentage}%";
+                };
+
+                webclient.DownloadFileCompleted += (s, ev) =>
+                {
+                    button2.Text = "Download"; 
+                    button2.Enabled = true;    
+                    button2.Font = new Font(button2.Font.FontFamily, 8.25f); 
+                    MessageBox.Show("Download complete", "Status");
+                };
+
+                webclient.DownloadFileAsync(new Uri(mac), fullPath);
             }
-            MessageBox.Show("Download complete");
-        }
+        
+
+    }
     }
 }

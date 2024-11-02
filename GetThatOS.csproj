@@ -92,6 +92,48 @@
     <Compile Include="Install menus\OSX\10.0.Designer.cs">
       <DependentUpon>10.0.cs</DependentUpon>
     </Compile>
+    <Compile Include="Install menus\OSX\101.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\101.Designer.cs">
+      <DependentUpon>101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\102.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\102.Designer.cs">
+      <DependentUpon>102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\107.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\107.Designer.cs">
+      <DependentUpon>107.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\108.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\108.Designer.cs">
+      <DependentUpon>108.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\110.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\110.Designer.cs">
+      <DependentUpon>110.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\111.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\111.Designer.cs">
+      <DependentUpon>111.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\OSX\112.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\OSX\112.Designer.cs">
+      <DependentUpon>112.cs</DependentUpon>
+    </Compile>
     <Compile Include="Install menus\Winbetas\Windows.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +228,27 @@
     </Compile>
     <EmbeddedResource Include="Install menus\OSX\10.0.resx">
       <DependentUpon>10.0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\101.resx">
+      <DependentUpon>101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\102.resx">
+      <DependentUpon>102.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\107.resx">
+      <DependentUpon>107.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\108.resx">
+      <DependentUpon>108.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\110.resx">
+      <DependentUpon>110.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\111.resx">
+      <DependentUpon>111.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\OSX\112.resx">
+      <DependentUpon>112.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Install menus\Winbetas\Windows.resx">
       <DependentUpon>Windows.cs</DependentUpon>

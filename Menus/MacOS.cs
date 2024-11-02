@@ -64,5 +64,11 @@ namespace GetThatOS.Menus
             _101 _101 = new _101();
             _101.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            _102 _102 = new _102();
+            _102.Show();
+        }
     }
 }

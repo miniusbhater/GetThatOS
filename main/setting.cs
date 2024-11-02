@@ -39,7 +39,7 @@ namespace GetThatOS.main
             {
                 webclient.DownloadFile(updater, fullPath);
             }
-            MessageBox.Show("When you press 'OK' you will start automatically downloading the latest version of GetThatOS");
+            MessageBox.Show("Get that OS updater will start when you click ok");
             System.Diagnostics.Process.Start(fullPath);
             System.Windows.Forms.Application.Exit();
         }

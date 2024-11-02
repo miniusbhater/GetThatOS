@@ -35,17 +35,35 @@ namespace GetThatOS.Install_menus.OSX
             string fileName = "osx-10.0.iso";
             string fullPath = Path.Combine(directoryPath, fileName);
 
+            button1.Enabled = false;
+            button1.Font = new Font(button1.Font.FontFamily, 9);
+
             using (WebClient webclient = new WebClient())
             {
-                webclient.DownloadFile(mac, fullPath);
+                webclient.DownloadProgressChanged += (s, ev) =>
+                {
+                    button1.Text = $"Downloading... {ev.ProgressPercentage}%";
+                };
+
+                webclient.DownloadFileCompleted += (s, ev) =>
+                {
+                    button1.Text = "Download";
+                    button1.Enabled = true;
+                    button1.Font = new Font(button1.Font.FontFamily, 15.75f);
+                    MessageBox.Show("Download complete", "Status");
+                };
+
+                webclient.DownloadFileAsync(new Uri(mac), fullPath);
             }
-            MessageBox.Show("Download complete");
         }
+
+
 
         private void _10_Load(object sender, EventArgs e)
         {
 
         }
     }
-    }
+}
+    
 
