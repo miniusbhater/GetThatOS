@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -23,7 +24,17 @@ namespace GetThatOSUpdater
 
         private void updater_Load(object sender, EventArgs e)
         {
-            string processName = "GetThatOS";  
+           
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            string processName = "GetThatOS";
             Process[] processes = Process.GetProcessesByName(processName);
 
             foreach (Process process in processes)
@@ -31,7 +42,7 @@ namespace GetThatOSUpdater
                 process.Kill();
             }
 
-            Thread.Sleep(2000);
+            await Task.Delay(2000);
 
             string getosname = "GetThatOS.exe";
             string getos = AppDomain.CurrentDomain.BaseDirectory;
@@ -43,12 +54,41 @@ namespace GetThatOSUpdater
             string fileName = "GetThatOS.exe";
             string fullPath = Path.Combine(directoryPath, fileName);
 
+            button1.Enabled = false;
+            button1.Font = new Font(button1.Font.FontFamily, 8);
+
             using (WebClient webclient = new WebClient())
             {
-                webclient.DownloadFile(updater, fullPath);
+                webclient.DownloadProgressChanged += (s, ev) =>
+                {
+                    button1.Text = $"Downloading...\n{ev.ProgressPercentage}%";
+                };
+
+                webclient.DownloadFileCompleted += (s, ev) =>
+                {
+                    button1.Text = "Download";
+                    button1.Enabled = true;
+                    button1.Font = new Font(button1.Font.FontFamily, 12f);
+                    MessageBox.Show("Download complete", "Status");
+                    System.Diagnostics.Process.Start(fullPath);
+                    System.Windows.Forms.Application.Exit();
+                };
+
+                webclient.DownloadFileAsync(new Uri(updater), fullPath);
             }
-            MessageBox.Show("update finished GetThatOS will now start up");
-            System.Diagnostics.Process.Start(fullPath);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+          
+
+            string getosname = "GetThatOS.exe";
+            string getos = AppDomain.CurrentDomain.BaseDirectory;
+            string getosfull = Path.Combine(getos, getosname);
+
+            Thread.Sleep(1500);
+
+            System.Diagnostics.Process.Start(getosfull);
             System.Windows.Forms.Application.Exit();
         }
     }
