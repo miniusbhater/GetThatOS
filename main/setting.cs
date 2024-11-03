@@ -4,6 +4,7 @@ using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -47,6 +48,21 @@ namespace GetThatOS.main
         private void setting_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var dis = new ProcessStartInfo
+
+            {
+
+                FileName = "https://discord.gg/dS6d7PET6W",
+
+                UseShellExecute = true
+
+            };
+
+            Process.Start(dis);
         }
     }
 }

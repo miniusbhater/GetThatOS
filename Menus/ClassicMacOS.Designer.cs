@@ -49,6 +49,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "MacOS 9.x";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -59,6 +60,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "MacOS 8.x";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -120,6 +122,7 @@
             this.button8.TabIndex = 10;
             this.button8.Text = "System 2.x";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
