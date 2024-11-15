@@ -21,6 +21,9 @@ Then GetThatOS should open and function the same as the native windows release
 Tested on Manjaro Linux
 
 
+Thank you to [xenonorsomething](https://github.com/XenonOrSomething) for the logo!
+
+
 ## FAQ
 
 #### •Will there ever be a Linux and/or MacOS release?
