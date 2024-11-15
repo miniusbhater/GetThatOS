@@ -73,12 +73,13 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 16);
             this.label3.TabIndex = 3;
-            this.label3.Text = "0.1.8";
+            this.label3.Text = "0.1.9";
             // 
             // splahs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(369, 424);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -89,6 +90,7 @@
             this.Name = "splahs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GetThatOS";
+            this.Load += new System.EventHandler(this.splahs_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

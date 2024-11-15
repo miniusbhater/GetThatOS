@@ -13,6 +13,7 @@ using GetThatOS.main;
 using GetThatOS.Properties;
 using System.Threading.Tasks;
 using System.Drawing.Text;
+using System.IO;
 
 namespace GetThatOS
 {
@@ -21,6 +22,7 @@ namespace GetThatOS
         public GetThatOS()
         {
             InitializeComponent();
+            ShowMessageOnFirstRun();
 
             this.FormClosing += GetThatOS_FormClosing;
             this.Shown += async (sender, e) =>
@@ -81,6 +83,24 @@ namespace GetThatOS
         private void GetThatOS_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+        private void ShowMessageOnFirstRun()
+        {
+            string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string appFolderPath = Path.Combine(appDataFolder, "GetThatOS");
+            string filePath = Path.Combine(appFolderPath, "firstRun.txt");
+
+            if (!File.Exists(filePath))
+            {
+                MessageBox.Show("This tool should only be downloaded from the official GitHub page: https://github.com/breathemonoxide/GetThatOS .\n If you downloaded the tool from a place other than my github, or have paid money for this program, you have been scammed. .\n run a virus scan on your computer ");
+
+                if (!Directory.Exists(appFolderPath))
+                {
+                    Directory.CreateDirectory(appFolderPath);
+                }
+
+                File.WriteAllText(filePath, "first run has occured");
+            }
         }
     }
 }

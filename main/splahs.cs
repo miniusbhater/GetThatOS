@@ -40,6 +40,11 @@ namespace GetThatOS.main
         {
 
         }
+
+        private void splahs_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 
     
