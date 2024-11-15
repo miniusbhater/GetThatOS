@@ -11,6 +11,8 @@ using System.Diagnostics;
 using GetThatOS.Menus;
 using GetThatOS.main;
 using GetThatOS.Properties;
+using System.Threading.Tasks;
+using System.Drawing.Text;
 
 namespace GetThatOS
 {
@@ -19,6 +21,17 @@ namespace GetThatOS
         public GetThatOS()
         {
             InitializeComponent();
+
+            this.FormClosing += GetThatOS_FormClosing;
+            this.Shown += async (sender, e) =>
+            {
+
+                await Task.Delay(100);
+
+
+                RunAfterRender();
+            };
+
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -58,7 +71,16 @@ namespace GetThatOS
 
         private void GetThatOS_Load(object sender, EventArgs e)
         {
-
+            
+        }
+        private void RunAfterRender()
+        {
+            {
+            }
+        }
+        private void GetThatOS_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

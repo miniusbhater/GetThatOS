@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GetThatOS.main;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -16,7 +17,7 @@ namespace GetThatOS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GetThatOS());
+            Application.Run(new splahs());
         }
     }
 }

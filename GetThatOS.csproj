@@ -86,6 +86,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Install menus\classmac\1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\classmac\1.Designer.cs">
+      <DependentUpon>1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\classmac\2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\classmac\2.Designer.cs">
+      <DependentUpon>2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\classmac\8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\classmac\8.Designer.cs">
+      <DependentUpon>8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\classmac\9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\classmac\9.Designer.cs">
+      <DependentUpon>9.cs</DependentUpon>
+    </Compile>
     <Compile Include="Install menus\OSX\10.0.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +230,12 @@
     <Compile Include="main\setting.Designer.cs">
       <DependentUpon>setting.cs</DependentUpon>
     </Compile>
+    <Compile Include="main\splahs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main\splahs.Designer.cs">
+      <DependentUpon>splahs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menus\ClassicMacOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,6 +247,12 @@
     </Compile>
     <Compile Include="Menus\Linux.Designer.cs">
       <DependentUpon>Linux.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\MacIPSW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\MacIPSW.Designer.cs">
+      <DependentUpon>MacIPSW.cs</DependentUpon>
     </Compile>
     <Compile Include="Menus\MacOS.cs">
       <SubType>Form</SubType>
@@ -262,6 +298,18 @@
     <Compile Include="settings\AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Install menus\classmac\1.resx">
+      <DependentUpon>1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\classmac\2.resx">
+      <DependentUpon>2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\classmac\8.resx">
+      <DependentUpon>8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\classmac\9.resx">
+      <DependentUpon>9.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Install menus\OSX\10.0.resx">
       <DependentUpon>10.0.cs</DependentUpon>
     </EmbeddedResource>
@@ -322,11 +370,17 @@
     <EmbeddedResource Include="main\setting.resx">
       <DependentUpon>setting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="main\splahs.resx">
+      <DependentUpon>splahs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menus\ClassicMacOS.resx">
       <DependentUpon>ClassicMacOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\Linux.resx">
       <DependentUpon>Linux.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MacIPSW.resx">
+      <DependentUpon>MacIPSW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menus\MacOS.resx">
       <DependentUpon>MacOS.cs</DependentUpon>
@@ -390,7 +444,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Install menus\classmac\" />
+    <Folder Include="Install menus\Linux\" />
+    <Folder Include="Install menus\MS-Dos\" />
+    <Folder Include="Install menus\Winserver\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
