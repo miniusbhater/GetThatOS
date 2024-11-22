@@ -24,7 +24,7 @@ namespace GetThatOSUpdater
 
         private void updater_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -80,7 +80,7 @@ namespace GetThatOSUpdater
 
         private void button2_Click(object sender, EventArgs e)
         {
-          
+
 
             string getosname = "GetThatOS.exe";
             string getos = AppDomain.CurrentDomain.BaseDirectory;
