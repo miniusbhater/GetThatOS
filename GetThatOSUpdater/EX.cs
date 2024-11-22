@@ -2,37 +2,31 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Net;
-using System.Security.Cryptography;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using System.IO;
+using System.Net;
 
 namespace GetThatOSUpdater
 {
-    public partial class updater : Form
+    public partial class EX : Form
     {
-        public updater()
+        public EX()
         {
             InitializeComponent();
         }
 
-        private void updater_Load(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-           
+            Process.Start("https://github.com/breathemonoxide/GetThatOS");
+            Process.Start("https://github.com/breathemonoxide/GetThatOS-beta");
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private async void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             string processName = "GetThatOS";
             Process[] processes = Process.GetProcessesByName(processName);
@@ -41,8 +35,6 @@ namespace GetThatOSUpdater
             {
                 process.Kill();
             }
-
-            await Task.Delay(2000);
 
             string getosname = "GetThatOS.exe";
             string getos = AppDomain.CurrentDomain.BaseDirectory;
@@ -68,7 +60,7 @@ namespace GetThatOSUpdater
                 {
                     button1.Text = "Download";
                     button1.Enabled = true;
-                    button1.Font = new Font(button1.Font.FontFamily, 8f);
+                    button1.Font = new Font(button1.Font.FontFamily, 12f);
                     MessageBox.Show("Download complete", "Status");
                     System.Diagnostics.Process.Start(fullPath);
                     System.Windows.Forms.Application.Exit();
@@ -80,22 +72,14 @@ namespace GetThatOSUpdater
 
         private void button2_Click(object sender, EventArgs e)
         {
-          
-
-            string getosname = "GetThatOS.exe";
-            string getos = AppDomain.CurrentDomain.BaseDirectory;
-            string getosfull = Path.Combine(getos, getosname);
-
-            Thread.Sleep(1500);
-
-            System.Diagnostics.Process.Start(getosfull);
-            System.Windows.Forms.Application.Exit();
+            AboutBox1 aboutBox1 = new AboutBox1();
+            aboutBox1.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            EX eX = new EX();
-            eX.Show();
+            old old = new old();
+            old.Show();
         }
     }
 }
