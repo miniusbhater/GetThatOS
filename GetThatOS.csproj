@@ -73,6 +73,9 @@
   <PropertyGroup>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -98,6 +101,12 @@
     </Compile>
     <Compile Include="Install menus\classmac\2.Designer.cs">
       <DependentUpon>2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Install menus\classmac\5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\classmac\5.Designer.cs">
+      <DependentUpon>5.cs</DependentUpon>
     </Compile>
     <Compile Include="Install menus\classmac\8.cs">
       <SubType>Form</SubType>
@@ -305,6 +314,9 @@
     <EmbeddedResource Include="Install menus\classmac\2.resx">
       <DependentUpon>2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\classmac\5.resx">
+      <DependentUpon>5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Install menus\classmac\8.resx">
       <DependentUpon>8.cs</DependentUpon>
     </EmbeddedResource>
@@ -431,7 +443,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="file%283%29.ico" />
-    <Content Include="Untitled.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
