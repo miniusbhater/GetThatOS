@@ -52,5 +52,11 @@ namespace GetThatOS.Menus
             _8 _8 = new _8();  
             _8.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            _5 _5 = new _5();  
+            _5.Show();
+        }
     }
 }

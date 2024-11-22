@@ -7,11 +7,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GetThatOS.main
@@ -64,5 +60,35 @@ namespace GetThatOS.main
 
             Process.Start(dis);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "You are about to join the beta programme, meaning you accept that the version(s) you are about to download may be buggy and not fully tested.\n\nPress 'OK' to continue or 'Cancel' to abort.",
+                "Beta Programme Warning",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Warning);
+
+            if (result == DialogResult.OK)
+            {
+                string updater = "https://github.com/breathemonoxide/GetThatOS-beta/releases/latest/download/GetThatOSUpdater.exe";
+                string directoryPath = AppDomain.CurrentDomain.BaseDirectory;
+                string fileName = "GetThatOSUpdater.exe";
+                string fullPath = Path.Combine(directoryPath, fileName);
+
+                using (WebClient webclient = new WebClient())
+                {
+                    webclient.DownloadFile(updater, fullPath);
+                }
+                MessageBox.Show("The Beta Updater will now start up");
+                System.Diagnostics.Process.Start(fullPath);
+                System.Windows.Forms.Application.Exit();
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                Console.WriteLine("aborted beta programme");
+            }
+        }
+
     }
 }
