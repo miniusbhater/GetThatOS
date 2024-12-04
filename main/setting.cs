@@ -38,7 +38,7 @@ namespace GetThatOS.main
 
             if (isbeta)
             {
-                string updater1 = "https://github.com/breathemonoxide/GetThatOS-beta/releases/latest/download/GetThatOSUpdater.exe";
+                string updater1 = "https://github.com/breathemonoxide/GetThatOS-Beta/raw/main/GetThatOSBetaUpd/GetThatOSUpdater.exe";
                 string directoryPath1 = AppDomain.CurrentDomain.BaseDirectory;
                 string fileName1 = "GetThatOSUpdater.exe";
                 string fullPath1 = Path.Combine(directoryPath1, fileName1);
@@ -56,7 +56,7 @@ namespace GetThatOS.main
 
 
 
-                string updater = "https://github.com/breathemonoxide/GetThatOS/releases/latest/download/GetThatOSUpdater.exe";
+                string updater = "https://github.com/breathemonoxide/GetThatOS/raw/main/GetThatOSUpdater/GetThatOSUpdater.exe";
                 string directoryPath = AppDomain.CurrentDomain.BaseDirectory;
                 string fileName = "GetThatOSUpdater.exe";
                 string fullPath = Path.Combine(directoryPath, fileName);
