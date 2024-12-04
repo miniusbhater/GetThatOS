@@ -13,12 +13,26 @@ using System.Net;
 
 namespace GetThatOSUpdater
 {
+
+ 
     public partial class EX : Form
     {
+
+        bool isbeta = false;
         public EX()
         {
             InitializeComponent();
+
+            if (!isbeta)
+            {
+                button1.Text = "Already on release!";
+                button1.Enabled = false;
+          
+            }
+
         }
+
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -80,6 +94,35 @@ namespace GetThatOSUpdater
         {
             old old = new old();
             old.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("Are you sure you want to remove GetThatOS?",
+                 "Remove?",
+       MessageBoxButtons.YesNo,
+       MessageBoxIcon.Error);
+
+            if (result == DialogResult.Yes)
+            {
+                string updater = "https://github.com/breathemonoxide/GetThatOS/raw/main/GetThatOS0/GetThatOS0.exe";
+                string directoryPath = AppDomain.CurrentDomain.BaseDirectory;
+                string fileName = "GetThatOS0.exe";
+                string fullPath = Path.Combine(directoryPath, fileName);
+
+                using (WebClient webclient = new WebClient())
+                {
+                    webclient.DownloadFile(updater, fullPath);
+                }
+                System.Diagnostics.Process.Start(fullPath);
+                System.Windows.Forms.Application.Exit();
+            }
+        }
+
+        private void EX_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

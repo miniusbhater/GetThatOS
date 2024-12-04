@@ -583,5 +583,34 @@ namespace GetThatOSUpdater
                 webclient.DownloadFileAsync(new Uri(os), fullPath);
             }
         }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            string os = "https://github.com/breathemonoxide/GetThatOS/releases/download/0.2.3/GetThatOS.exe";
+            string directoryPath = textBox1.Text;
+            string fileName = "GetThatOSV0.2.3.exe";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            button1.Enabled = false;
+            button1.Font = new Font(button1.Font.FontFamily, 9);
+
+            using (WebClient webclient = new WebClient())
+            {
+                webclient.DownloadProgressChanged += (s, ev) =>
+                {
+                    button1.Text = $"Downloading... {ev.ProgressPercentage}%";
+                };
+
+                webclient.DownloadFileCompleted += (s, ev) =>
+                {
+                    button1.Text = "0.2.3";
+                    button1.Enabled = true;
+                    button1.Font = new Font(button1.Font.FontFamily, 15.75f);
+                    MessageBox.Show("Download complete", "Status");
+                };
+
+                webclient.DownloadFileAsync(new Uri(os), fullPath);
+            }
+        }
     }
 }

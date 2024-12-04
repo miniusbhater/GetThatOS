@@ -95,11 +95,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(131, 80);
+            this.label4.Location = new System.Drawing.Point(130, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 15);
             this.label4.TabIndex = 5;
-            this.label4.Text = "V0.1.3";
+            this.label4.Text = "V0.1.4";
             // 
             // button3
             // 

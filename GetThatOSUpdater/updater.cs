@@ -49,7 +49,7 @@ namespace GetThatOSUpdater
             string getosfull = Path.Combine(getos, getosname);
             File.Delete(getosfull);
 
-            string updater = "https://github.com/breathemonoxide/GetThatOS/releases/latest/download/GetThatOS.exe";
+            string updater = "https://github.com/breathemonoxide/GetThatOS-beta/releases/latest/download/GetThatOS.exe";
             string directoryPath = AppDomain.CurrentDomain.BaseDirectory;
             string fileName = "GetThatOS.exe";
             string fullPath = Path.Combine(directoryPath, fileName);
