@@ -18,7 +18,7 @@ After you have installed Wine open your terminal and type `wine` followed by the
 
 Then GetThatOS should open and function the same as the native windows release
 
-Tested on Manjaro Linux
+Tested on Manjaro Linux, Arch linux and Ubuntu
 
 
 
