@@ -204,6 +204,12 @@
     <Compile Include="Install menus\OSX\15.Designer.cs">
       <DependentUpon>15.cs</DependentUpon>
     </Compile>
+    <Compile Include="Install menus\TempleOS\tos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Install menus\TempleOS\tos.Designer.cs">
+      <DependentUpon>tos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Install menus\Winbetas\Windows.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -364,6 +370,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Install menus\OSX\15.resx">
       <DependentUpon>15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Install menus\TempleOS\tos.resx">
+      <DependentUpon>tos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Install menus\Winbetas\Windows.resx">
       <DependentUpon>Windows.cs</DependentUpon>

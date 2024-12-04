@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GetThatOS.Install_menus.TempleOS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,6 +45,12 @@ namespace GetThatOS.Menus
         private void More_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            tos tos = new tos();
+            tos.Show();
         }
     }
 }

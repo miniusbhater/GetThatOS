@@ -65,7 +65,7 @@ namespace GetThatOS.main
             }
 
             
-            Thread.Sleep(4500);
+            Thread.Sleep(2500);
             GetThatOS getos = new GetThatOS();
             this.Hide();
             Thread.Sleep(400);
