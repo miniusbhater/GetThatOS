@@ -2,7 +2,7 @@
 
 A simple and user friendly tool for downloading Operating system disk images 
 
-![image](https://github.com/user-attachments/assets/249830c3-6606-4504-bd42-b05436897b83)
+![image](https://github.com/user-attachments/assets/71e0fa0c-98ed-4716-b7d7-8016af5765fb)
 
 
 ### Requires windows 7 or newer with .NET framework 4.7.2 
