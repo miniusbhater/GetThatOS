@@ -53,3 +53,6 @@ I cannot add every single OS ever to exit. If there is one that you desperately 
 
 
 
+#### What if an image does not work?
+
+All images have been tested by me in VMware to ensure that they work exept for a couple that i tested in parallels desktop. But if an image does not work please create an issue and i will fix it ASAP.
