@@ -34,7 +34,7 @@ Tested on Manjaro Linux, Arch linux and Ubuntu
 
 #### •Will there ever be a Linux and/or MacOS release?
 
-There might, but keep in mind that i am prioritizing Windows even though i am a Linux user, as the majority of OS market share is held by windows, meaning most users will be windows users. But yes there will probably be one in the near future
+[11/02/2025] I am now working on a Linux and MacOS CLI version of GetThatOS! There will also be a windows CLI version availible but the original winforms version will stay.
 
 
 
