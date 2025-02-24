@@ -34,7 +34,7 @@ Tested on Manjaro Linux, Arch linux and Ubuntu
 
 #### •Will there ever be a Linux and/or MacOS release?
 
-[11/02/2025] I am now working on a Linux and MacOS CLI version of GetThatOS! There will also be a windows CLI version availible but the original winforms version will stay.
+[11/02/2025] I am now working on a Linux and MacOS CLI version of GetThatOS! There will also be a windows CLI version available but the original winforms version will stay.
 
 
 
