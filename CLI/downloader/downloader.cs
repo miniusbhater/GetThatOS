@@ -15,6 +15,9 @@ namespace GetThatOSCLI.downloader
 {
     internal class downloader
     {
+
+        //-------------------------------------------------------------Mac----------------------------------------------------------------------------------
+
         public static void tahoe()
         {
             string url = "https://swcdn.apple.com/content/downloads/48/60/082-62552-A_EMRHUZQE63/olsval9x51g10i8oplpeakcon8gqp1agei/InstallAssistant.pkg";
@@ -51,7 +54,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -111,7 +114,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -171,7 +174,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -231,7 +234,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -291,7 +294,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -351,7 +354,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -444,7 +447,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -503,7 +506,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -560,7 +563,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -626,7 +629,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -683,7 +686,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -761,7 +764,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -820,7 +823,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -877,7 +880,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -935,7 +938,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -992,7 +995,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -1049,7 +1052,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -1106,7 +1109,7 @@ namespace GetThatOSCLI.downloader
                     webclient.DownloadProgressChanged += (s, ev) =>
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Download percentage may not always be accurate!");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
                     };
@@ -1126,6 +1129,1026 @@ namespace GetThatOSCLI.downloader
 
             }
         }
+
+        public static void mac9()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/9.2/macos_921_ppc.iso";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "macos92.iso";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        main.mainMenu.menu();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+
+            }
+        }
+
+        public static void mac8()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/8.6/MacOS86.iso";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "macos86.iso";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        main.mainMenu.menu();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+
+            }
+        }
+
+        public static void mac7()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/7/System.7.1.CD.iso";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "system71.iso";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        main.mainMenu.menu();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+
+            }
+        }
+
+        public static void mac6()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/6/System.Tools.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System6.System.Tools.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        downloader.mac62();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+
+            }
+        }
+
+        public static void mac62()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/6/Printing.Tools.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System6.Printing.Tools.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        downloader.mac63();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+
+            }
+        }
+
+        public static void mac63()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/6/Utilities.1.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System6.Utilities.1.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        downloader.mac64();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+
+            }
+
+            
+        }
+
+        public static void mac64()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/6/Utilities.2.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System6.Utilities.2.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        main.mainMenu.menu();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+
+            }
+        }
+
+        public static void mac5()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/5.0/System.Tools.1.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System5.System.Tools.1.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        downloader.mac51();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+            }
+            }
+
+        public static void mac51()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/5.0/System.Tools.2.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System5.System.Tools.2.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        downloader.mac52();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+            }
+        }
+
+        public static void mac52()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/5.0/Utilities.1.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System5.Utilities.1.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        downloader.mac53();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+            }
+        }
+
+        public static void mac53()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/5.0/Utilities.2.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System5.Utilities.2.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        main.mainMenu.menu();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+            }
+        }
+
+        public static void mac4()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/4/System.Tools.2.0.1.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System4.System.Tools.2.0.1.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        downloader.mac41();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+            }
+        }
+
+        public static void mac41()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/4/Utilities.2.1.Disk.1.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System4.Utilities.2.1.Disk.1.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        downloader.mac42();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+            }
+        }
+
+        public static void mac42()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/4/Utilities.2.1.Disk.2.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System4.Utilities.2.1.Disk.2.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        main.mainMenu.menu();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+            }
+        }
+
+        public static void mac3()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/3/System.Tools.512ke.v1.0.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System3.System.Tools.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        downloader.mac31();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+            }
+        }
+
+        public static void mac31()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/3/Utilities.1.0.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System3.Utilities.1.0.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        main.mainMenu.menu();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+            }
+        }
+
+        public static void mac2()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/sys2/System.Disk.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System2.System.Disk.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        main.mainMenu.menu();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+            }
+        }
+
+        public static void mac1()
+        {
+            string url = "https://github.com/miniusbhater/diskimages/releases/download/sys1/System.Disk.img";
+            Console.WriteLine($"Downloading from: {url}");
+            string docs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string directoryPath = Path.Combine(docs, "GetThatOS");
+
+            Console.WriteLine("By default the installer will be downloaded to documents\\GetThatOS\nIs this okay? (y/n)");
+            var keyInfo = Console.ReadKey(intercept: true);
+
+            if (keyInfo.Key != ConsoleKey.Y)
+            {
+                Console.WriteLine("\nFile path:");
+                string newPath = Console.ReadLine();
+                directoryPath = newPath;
+
+            }
+
+            string fileName = "System1.System.Disk.img";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            Console.WriteLine("Would you like to start the download? (y/n)");
+            var keyInfo1 = Console.ReadKey(intercept: true);
+            if (keyInfo1.Key == ConsoleKey.Y)
+            {
+                using (WebClient webclient = new WebClient())
+                using (ManualResetEvent downloadFinished = new ManualResetEvent(false))
+                {
+                    webclient.DownloadProgressChanged += (s, ev) =>
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine($"Downloading... {ev.ProgressPercentage}%");
+                    };
+
+                    webclient.DownloadFileCompleted += (s, ev) =>
+                    {
+                        Console.WriteLine($"Download complete!\nInstaller located at {fullPath}");
+                        downloadFinished.Set();
+                        Thread.Sleep(5000);
+                        main.mainMenu.menu();
+                    };
+
+                    webclient.DownloadFileAsync(new Uri(url), fullPath);
+
+                    downloadFinished.WaitOne();
+                }
+            }
+        }
+
+        //-------------------------------------------------------------Win----------------------------------------------------------------------------------
+
 
     }
 }

@@ -11,18 +11,18 @@ namespace GetThatOSCLI.main
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("1.  macOS Tahoe        ");
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write("[26]");
+            Console.Write("[26.0.0]");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("       [Available]");
+            Console.Write("   [Available]");
             Console.ResetColor();
             Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("2.  macOS Sequoia      ");
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write("[15.5]");
+            Console.Write("[15.5.0]");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("     [Available]");
+            Console.Write("   [Available]");
             Console.ResetColor();
             Console.WriteLine();
 
@@ -206,6 +206,87 @@ namespace GetThatOSCLI.main
             Console.ResetColor();
             Console.WriteLine();
 
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("23. Mac OS 9           ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("[9.2.2]");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("    [Available]");
+            Console.ResetColor();
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("24. Mac OS 8           ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("[8.6.0]");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("    [Available]");
+            Console.ResetColor();
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("25. System 7           ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("[7.5.5]");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("    [Available]");
+            Console.ResetColor();
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("26. System 6           ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("[6.0.8]");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("    [Available]");
+            Console.ResetColor();
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("27. System 5           ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("[5.0.0]");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("    [Available]");
+            Console.ResetColor();
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("28. System 4           ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("[4.3.0]");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("    [Available]");
+            Console.ResetColor();
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("29. System 3           ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("[3.2.0]");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("    [Available]");
+            Console.ResetColor();
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("30. System 2           ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("[2.0.0]");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("    [Available]");
+            Console.ResetColor();
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("31. System 1           ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("[1.1.0]");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("    [Available]");
+            Console.ResetColor();
+            Console.WriteLine();
+
 
             string input = Console.ReadLine();
 
@@ -276,6 +357,33 @@ namespace GetThatOSCLI.main
                     break;
                 case "22":
                     downloader.downloader.cheetah();
+                    break;
+                case "23":
+                    downloader.downloader.mac9();
+                    break;
+                case "24":
+                    downloader.downloader.mac8();
+                    break;
+                case "25":
+                    downloader.downloader.mac7();
+                    break;
+                case "26":
+                    downloader.downloader.mac6();
+                    break;
+                case "27":
+                    downloader.downloader.mac5();
+                    break;
+                case "28":
+                    downloader.downloader.mac4();
+                    break;
+                case "29":
+                    downloader.downloader.mac3();
+                    break;
+                case "30":
+                    downloader.downloader.mac2();
+                    break;
+                case "31":
+                    downloader.downloader.mac1();
                     break;
                 default:
                     Console.WriteLine("Invalid input");

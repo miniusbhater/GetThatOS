@@ -18,6 +18,9 @@ namespace GetThatOSCLI.loader
             await getArch();
             await operatingSystem();
             await beginGOS();
+            await getSize();
+            await setSize();
+            await newSize();
             await adminWarn();
             await onlineCheck();      
             await githubCheck();
@@ -59,6 +62,26 @@ namespace GetThatOSCLI.loader
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("Welcome to GetThatOS!");
             Console.ForegroundColor= ConsoleColor.White;
+        }
+
+        static async Task getSize()
+        {
+              Console.WriteLine("Window Size: {0}x{1}", Console.WindowWidth, Console.WindowHeight);
+              Console.WriteLine("Buffer Size: {0}x{1}", Console.BufferWidth, Console.BufferHeight);
+              Thread.Sleep(1000);
+        }
+      
+
+        static async Task setSize()
+        {
+            Console.WriteLine("Changing size");
+            Console.SetWindowSize(120, 40);
+        }
+
+        static async Task newSize()
+        {
+            Console.WriteLine("New Window Size: {0}x{1}", Console.WindowWidth, Console.WindowHeight);
+            Console.WriteLine("New Buffer Size: {0}x{1}", Console.BufferWidth, Console.BufferHeight);
         }
 
         static async Task adminWarn()
