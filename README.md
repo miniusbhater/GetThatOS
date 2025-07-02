@@ -33,7 +33,9 @@ Tested on Manjaro Linux, Arch linux and Ubuntu
 
 ## Project updates
 
-[30/06/2025] After delays the first CLI version is out
+[02/07/2025] I am nearly ready to release the Linux CLI version along with more general updates
+
+[29/06/2025] After delays the first CLI version is out along with a macOS release
 
 [11/02/2025] I am now working on a Linux and MacOS CLI version of GetThatOS! There will also be a windows CLI version available but the original winforms version will stay.
 
