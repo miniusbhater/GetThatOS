@@ -33,7 +33,7 @@ Tested on Manjaro Linux, Arch linux and Ubuntu
 
 ## Project updates
 
-[03/01/2026] Sorry for the long wait but i am not completely remaking GetThatOS for like the 5th time but now in wpf so hopefully it looks half decent. I do not have a release timeframe so assume it will be in the coming weeks if i dont loose interest like i usually do, to be safe give me until jan 3rd 2027 it will probably be out by then.
+[03/01/2026] Sorry for the long wait but i am now completely remaking GetThatOS for like the 5th time but now in wpf so hopefully it looks half decent. I do not have a release timeframe so assume it will be in the coming weeks if i dont loose interest like i usually do, to be safe give me until jan 3rd 2027 it will probably be out by then.
 
 [02/07/2025] I am nearly ready to release the Linux CLI version along with more general updates
 
