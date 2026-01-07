@@ -33,11 +33,13 @@ Tested on Manjaro Linux, Arch linux and Ubuntu
 
 ## Project updates
 
+[07/01/2026] I am not too sure what i want to do with GetThatOS anymore, i dont really have much interest in continuing development. A full console release may come or at best a winforms release.
+
 [03/01/2026] Sorry for the long wait but i am now completely remaking GetThatOS for like the 5th time but now in wpf so hopefully it looks half decent. I do not have a release timeframe so assume it will be in the coming weeks if i dont loose interest like i usually do, to be safe give me until jan 3rd 2027 it will probably be out by then.
 
-[02/07/2025] I am nearly ready to release the Linux CLI version along with more general updates
+[02/07/2025] I am nearly ready to release the Linux CLI version along with more general updates.
 
-[29/06/2025] After delays the first CLI version is out along with a macOS release
+[29/06/2025] After delays the first CLI version is out along with a macOS release.
 
 [11/02/2025] I am now working on a Linux and MacOS CLI version of GetThatOS! There will also be a windows CLI version available but the original winforms version will stay.
 
