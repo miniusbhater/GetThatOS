@@ -4,7 +4,8 @@
 
 A simple and user friendly tool for downloading Operating system disk images 
 
-![image](https://github.com/user-attachments/assets/71e0fa0c-98ed-4716-b7d7-8016af5765fb)
+![image](https://github.com/user-attachments/assets/71e0fa0c-98ed-4716-b7d7-8016af5765fb) ![GitHub Created At](https://img.shields.io/github/created-at/miniusbhater/GetThatOS)
+
 
 
 ### Requires windows 7 or newer with .NET framework 4.7.2 
