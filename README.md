@@ -1,5 +1,6 @@
 # GetThatOS
-# ![Downloads](https://img.shields.io/github/downloads/miniusbhater/GetThatOS/total?style=flat) ![GitHub Created At](https://img.shields.io/github/created-at/miniusbhater/GetThatOS?style=flat)
+# ![Downloads](https://img.shields.io/github/downloads/miniusbhater/GetThatOS/total?style=flat) ![GitHub Created At](https://img.shields.io/github/created-at/miniusbhater/GetThatOS?style=flat) ![GitHub Release](https://img.shields.io/github/v/release/miniusbhater/GetThatOS?style=flat)
+
 
 
 
