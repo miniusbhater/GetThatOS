@@ -1,10 +1,12 @@
 # GetThatOS
-# ![Downloads](https://img.shields.io/github/downloads/miniusbhater/GetThatOS/total?style=flat)
+# ![Downloads](https://img.shields.io/github/downloads/miniusbhater/GetThatOS/total?style=flat) ![GitHub Created At](https://img.shields.io/github/created-at/miniusbhater/GetThatOS?style=flat)
+
+
 
 
 A simple and user friendly tool for downloading Operating system disk images 
 
-![image](https://github.com/user-attachments/assets/71e0fa0c-98ed-4716-b7d7-8016af5765fb) ![GitHub Created At](https://img.shields.io/github/created-at/miniusbhater/GetThatOS)
+![image](https://github.com/user-attachments/assets/71e0fa0c-98ed-4716-b7d7-8016af5765fb)
 
 
 
