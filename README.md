@@ -1,5 +1,5 @@
 # GetThatOS
-# https://img.shields.io/github/downloads/miniusbhater/GetThatOS/total?style=flat
+# ![Downloads](https://img.shields.io/github/downloads/miniusbhater/GetThatOS/total?style=flat)
 
 
 A simple and user friendly tool for downloading Operating system disk images 
