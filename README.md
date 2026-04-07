@@ -7,6 +7,10 @@
 
 A simple and user friendly tool for downloading Operating system disk images 
 
+<img width="635" height="383" alt="image" src="https://github.com/user-attachments/assets/8a6509a9-0ed9-466c-9a7f-61a7cde9c18a" />
+
+
+### old image
 ![image](https://github.com/user-attachments/assets/71e0fa0c-98ed-4716-b7d7-8016af5765fb)
 
 
