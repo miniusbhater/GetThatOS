@@ -32,7 +32,6 @@
             label2 = new Label();
             label3 = new Label();
             button1 = new Button();
-            button2 = new Button();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
@@ -77,17 +76,6 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
-            // 
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(326, 157);
-            button2.Name = "button2";
-            button2.Size = new Size(77, 22);
-            button2.TabIndex = 4;
-            button2.Text = "More";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -95,7 +83,7 @@
             label4.Name = "label4";
             label4.Size = new Size(31, 15);
             label4.TabIndex = 5;
-            label4.Text = "0.2.7";
+            label4.Text = "0.2.8";
             // 
             // label5
             // 
@@ -125,7 +113,6 @@
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -143,7 +130,6 @@
         private Label label2;
         private Label label3;
         private Button button1;
-        private Button button2;
         private Label label4;
         private Label label5;
         private Label label6;

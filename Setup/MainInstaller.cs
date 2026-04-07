@@ -21,7 +21,7 @@ namespace GetThatOSSetup
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             label5.Visible = true;
             label5.Text = ("Creating root folder");
@@ -214,9 +214,28 @@ namespace GetThatOSSetup
             string download21 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows98953_logo.ico";
             string output21 = Path.Combine(CreateFolder1, "Windows98953_logo.ico");
 
-            using (WebClient webclient20 = new WebClient())
+            using (WebClient webclient21 = new WebClient())
             {
-                webclient20.DownloadFile(new Uri(download20), output20);
+                webclient21.DownloadFile(new Uri(download21), output21);
+            }
+
+            string download23 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/coconut.jpg";
+            string output23 = Path.Combine(CreateFolder1, "coconut.jpg");
+
+            using (WebClient webclient23 = new WebClient())
+            {
+                webclient23.DownloadFile(new Uri(download23), output23);
+            }
+
+
+            label5.Text = ("Downloading GetThatIntegrity");
+
+            string download22 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatIntegrity.exe";
+            string output22 = Path.Combine(CreateFolder, "GetThatIntegrity.exe");
+
+            using (WebClient webclient22 = new WebClient())
+            {
+                webclient22.DownloadFile(new Uri(download22), output22);
             }
 
 
