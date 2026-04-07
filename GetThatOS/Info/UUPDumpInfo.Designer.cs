@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UUPDumpInfo));
             label1 = new Label();
             label2 = new Label();
-            linkLabel1 = new LinkLabel();
             SuspendLayout();
             // 
             // label1
@@ -50,33 +48,20 @@
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(4, 53);
             label2.Name = "label2";
-            label2.Size = new Size(296, 168);
+            label2.Size = new Size(272, 63);
             label2.TabIndex = 1;
-            label2.Text = resources.GetString("label2.Text");
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.Location = new Point(4, 206);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(78, 21);
-            linkLabel1.TabIndex = 2;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "uupdump";
-            linkLabel1.LinkClicked += this.linkLabel1_LinkClicked;
+            label2.Text = "Windows 11 - XP will be downloaded \r\nfrom Archive.org\r\n\r\n";
             // 
             // UUPDumpInfo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(293, 450);
-            Controls.Add(linkLabel1);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "UUPDumpInfo";
             Text = "Form1";
-            Load += this.UUPDumpInfo_Load;
+            Load += UUPDumpInfo_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -85,6 +70,5 @@
 
         private Label label1;
         private Label label2;
-        private LinkLabel linkLabel1;
     }
 }

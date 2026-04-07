@@ -64,12 +64,11 @@ namespace GetThatOS.Main
         bool macos4 = false;
         bool macos3 = false;
         bool macos2 = false;
-        bool macos = false;
-
+        bool macos = false;        
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.2.5");
+            Console.WriteLine("0.2.8");
             InitializeComponent();
 
 
@@ -83,6 +82,8 @@ namespace GetThatOS.Main
             DisableUnwantedText();
             DisableUnwantedButtons();
             GetDocs();
+            string osEnv = System.Environment.OSVersion.ToString();
+            this.Text = $"GetThatOS 0.2.8 | {osEnv}";
 
         }
 
@@ -102,9 +103,9 @@ namespace GetThatOS.Main
             {
                 pictureBox1.Image = Image.FromFile(imgpath);
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-
+                MessageBox.Show("Something bad happened! :(");
             }
         }
 
@@ -884,75 +885,72 @@ namespace GetThatOS.Main
         {
             if (Windows11)
             {
-                var psi = new ProcessStartInfo
+                string directory = textBox1.Text;
+                DownloadFileWithProgress("https://archive.org/download/windows-11-24h2-iso_202501/Win11_24H2_English_x64.iso", Path.Combine(directory, "Windows11.iso"), () =>
+
                 {
-                    FileName = @"https://www.microsoft.com/en-us/software-download/windows11",
-                    UseShellExecute = true
-                };
-                Process.Start(psi);
-
-
-
+                    MessageBox.Show("Download complete");
+                });
             }
 
             if (windows10)
             {
-                var psi = new ProcessStartInfo
+                string directory = textBox1.Text;
+                DownloadFileWithProgress("https://archive.org/download/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2023_x64_dvd_c29e4bb3/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2023_x64_dvd_c29e4bb3.iso", Path.Combine(directory, "Windows10.iso"), () =>
+
                 {
-                    FileName = @"https://www.microsoft.com/en-us/software-download/windows10",
-                    UseShellExecute = true
-                };
-                Process.Start(psi);
+                    MessageBox.Show("Download complete");
+                });
             }
 
             if (windows81)
             {
-                var psi = new ProcessStartInfo
+                string directory = textBox1.Text;
+                DownloadFileWithProgress("https://archive.org/download/win-8.1-english-x-64-x-86/Win8.1_English_x64.iso", Path.Combine(directory, "Windows8-1.iso"), () =>
+
                 {
-                    FileName = @"https://archive.org/details/win-8.1-english-x-64-x-86",
-                    UseShellExecute = true
-                };
-                Process.Start(psi);
+                    MessageBox.Show("Download complete");
+                });
             }
 
             if (windows8)
             {
-                var psi = new ProcessStartInfo
+                string directory = textBox1.Text;
+                DownloadFileWithProgress("https://archive.org/download/windows-8-x-64/Windows%208%20x64.iso", Path.Combine(directory, "Windows8.iso"), () =>
+
                 {
-                    FileName = @"https://archive.org/details/windows-8-x-64",
-                    UseShellExecute = true
-                };
-                Process.Start(psi);
+                    MessageBox.Show("Download complete");
+                });
             }
 
             if (windows7)
             {
-                var psi = new ProcessStartInfo
+                string directory = textBox1.Text;
+                DownloadFileWithProgress("https://archive.org/download/Windows7-iso/win7_64_bit.iso", Path.Combine(directory, "Windows7.iso"), () =>
+
                 {
-                    FileName = @"https://archive.org/details/Windows7-iso",
-                    UseShellExecute = true
-                };
-                Process.Start(psi);
+                    MessageBox.Show("Download complete");
+                });
             }
 
             if (windowsvista)
             {
-                var psi = new ProcessStartInfo
+                string directory = textBox1.Text;
+                DownloadFileWithProgress("https://archive.org/download/windows-vista-64bit_202303/Windows_Vista_64bit.iso", Path.Combine(directory, "WindowsVista.iso"), () =>
+
                 {
-                    FileName = @"https://archive.org/details/win-vista-ultimate-x64",
-                    UseShellExecute = true
-                };
-                Process.Start(psi);
+                    MessageBox.Show("Download complete");
+                });
             }
 
             if (windowsxp)
             {
-                var psi = new ProcessStartInfo
+                string directory = textBox1.Text;
+                DownloadFileWithProgress("https://archive.org/download/WinXPProSP3x86/en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso", Path.Combine(directory, "WindowsXP.iso"), () =>
+
                 {
-                    FileName = @"https://archive.org/details/WinXPProSP3x86",
-                    UseShellExecute = true
-                };
-                Process.Start(psi);
+                    MessageBox.Show("Download complete");
+                });
             }
 
             if (windowsme)
@@ -2605,6 +2603,17 @@ namespace GetThatOS.Main
             macos3 = false;
             macos2 = false;
             macos = true;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Sierra form = new Sierra();
+            form.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

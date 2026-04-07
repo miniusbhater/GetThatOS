@@ -38,9 +38,8 @@
             label6 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
             button1 = new Button();
-            button2 = new Button();
             button3 = new Button();
-            button4 = new Button();
+            button2 = new Button();
             button23 = new Button();
             flowLayoutPanel2 = new FlowLayoutPanel();
             button5 = new Button();
@@ -176,9 +175,8 @@
             // 
             flowLayoutPanel1.AutoScroll = true;
             flowLayoutPanel1.Controls.Add(button1);
-            flowLayoutPanel1.Controls.Add(button2);
             flowLayoutPanel1.Controls.Add(button3);
-            flowLayoutPanel1.Controls.Add(button4);
+            flowLayoutPanel1.Controls.Add(button2);
             flowLayoutPanel1.Controls.Add(button23);
             flowLayoutPanel1.Location = new Point(12, 53);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -196,21 +194,10 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
-            // button2
-            // 
-            button2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(3, 58);
-            button2.Name = "button2";
-            button2.Size = new Size(130, 49);
-            button2.TabIndex = 1;
-            button2.Text = "Linux";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
             // button3
             // 
             button3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(3, 113);
+            button3.Location = new Point(3, 58);
             button3.Name = "button3";
             button3.Size = new Size(130, 49);
             button3.TabIndex = 2;
@@ -218,21 +205,21 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // button4
+            // button2
             // 
-            button4.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(3, 168);
-            button4.Name = "button4";
-            button4.Size = new Size(130, 49);
-            button4.TabIndex = 3;
-            button4.Text = "Other";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            button2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.Location = new Point(3, 113);
+            button2.Name = "button2";
+            button2.Size = new Size(130, 49);
+            button2.TabIndex = 5;
+            button2.Text = "SierraOS";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
             // 
             // button23
             // 
             button23.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button23.Location = new Point(3, 223);
+            button23.Location = new Point(3, 168);
             button23.Name = "button23";
             button23.Size = new Size(130, 49);
             button23.TabIndex = 4;
@@ -455,7 +442,7 @@
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.Location = new Point(365, 261);
             label8.Name = "label8";
-            label8.Size = new Size(183, 15);
+            label8.Size = new Size(184, 15);
             label8.TabIndex = 12;
             label8.Text = "Info About Downloading This OS:";
             // 
@@ -477,6 +464,7 @@
             textBox1.Size = new Size(118, 23);
             textBox1.TabIndex = 14;
             textBox1.Visible = false;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label9
             // 
@@ -927,9 +915,7 @@
         private Label label6;
         private FlowLayoutPanel flowLayoutPanel1;
         private Button button1;
-        private Button button2;
         private Button button3;
-        private Button button4;
         private FlowLayoutPanel flowLayoutPanel2;
         private Button button5;
         private Button button6;
@@ -986,5 +972,6 @@
         private Button button51;
         private Button button52;
         private Button button53;
+        private Button button2;
     }
 }

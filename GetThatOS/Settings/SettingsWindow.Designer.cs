@@ -57,7 +57,7 @@
             label2.Name = "label2";
             label2.Size = new Size(38, 17);
             label2.TabIndex = 2;
-            label2.Text = "0.2.5";
+            label2.Text = "0.2.8";
             // 
             // button1
             // 
@@ -68,6 +68,7 @@
             button1.TabIndex = 3;
             button1.Text = "Integrity Check";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -118,6 +119,7 @@
             Name = "SettingsWindow";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "GetThatOS";
+            Load += SettingsWindow_Load;
             ResumeLayout(false);
             PerformLayout();
         }
