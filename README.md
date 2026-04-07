@@ -38,6 +38,7 @@ Tested on Manjaro Linux, Arch linux and Ubuntu
 
 
 ## Project updates
+[07/04/2026] Now releasing a horribly coded build i made back in july last year :) (gui)
 
 [07/01/2026] I am not too sure what i want to do with GetThatOS anymore, i dont really have much interest in continuing development. A full console release may come or at best a winforms release.
 
