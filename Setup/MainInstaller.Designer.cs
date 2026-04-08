@@ -83,7 +83,7 @@
             label4.Name = "label4";
             label4.Size = new Size(31, 15);
             label4.TabIndex = 5;
-            label4.Text = "0.2.8";
+            label4.Text = "0.2.9";
             // 
             // label5
             // 
@@ -117,8 +117,11 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            MaximizeBox = false;
             Name = "MainInstaller";
-            Text = "Setup";
+            ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Setup - 0.2.9";
             Load += MainInstaller_Load;
             ResumeLayout(false);
             PerformLayout();

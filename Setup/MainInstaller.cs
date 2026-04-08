@@ -29,7 +29,7 @@ namespace GetThatOSSetup
             string CreateFolder = Path.Combine(ProgramFiles, "GetThatOS");
             Directory.CreateDirectory(CreateFolder);
             label5.Text = ("Installing executable");
-            string download = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS.exe";
+            string download = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatOS.exe";
             string output = Path.Combine(CreateFolder, "GetThatOS.exe");
 
             using (WebClient webclient = new WebClient())
@@ -230,7 +230,7 @@ namespace GetThatOSSetup
 
             label5.Text = ("Downloading GetThatIntegrity");
 
-            string download22 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatIntegrity.exe";
+            string download22 = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatIntegrity.exe";
             string output22 = Path.Combine(CreateFolder, "GetThatIntegrity.exe");
 
             using (WebClient webclient22 = new WebClient())
@@ -238,9 +238,25 @@ namespace GetThatOSSetup
                 webclient22.DownloadFile(new Uri(download22), output22);
             }
 
+            label5.Text = ("Downloading GetThatUptime");
 
+            string download24 = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatUptime.exe";
+            string output24 = Path.Combine(CreateFolder, "GetThatUptime.exe");
 
+            using (WebClient webclient24 = new WebClient())
+            {
+                webclient24.DownloadFile(new Uri(download24), output24);
+            }
 
+            label5.Text = ("Downloading GetThatUninstaller");
+
+            string download25 = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatUninstaller.exe";
+            string output25 = Path.Combine(CreateFolder, "GetThatUninstaller.exe");
+
+            using (WebClient webclient25 = new WebClient())
+            {
+                webclient25.DownloadFile(new Uri(download25), output25);
+            }
 
 
 
