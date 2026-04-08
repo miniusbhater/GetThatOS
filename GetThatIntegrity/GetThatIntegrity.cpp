@@ -340,8 +340,55 @@ int main()
         exit(1);
     }
 
+
+    // GetThatIntegrity
+    std::string chkFr22 = rootDir + "GetThatIntegrity.exe";
+    std::cout << chkFr22;
+    std::ifstream file22(chkFr22);
+
+    if (file22.good()) {
+        std::cout << "\nFile exists\n";
+    }
+    else {
+        std::cout << "\nFile does not exist\n";
+        std::cout << "\nPlease re install GetThatOS\n";
+        char ch22 = _getch();
+        exit(1);
+    }
+
+    // GetThatUptime
+    std::string chkFr23 = rootDir + "GetThatUptime.exe";
+    std::cout << chkFr23;
+    std::ifstream file23(chkFr23);
+
+    if (file23.good()) {
+        std::cout << "\nFile exists\n";
+    }
+    else {
+        std::cout << "\nFile does not exist\n";
+        std::cout << "\nPlease re install GetThatOS\n";
+        char ch23 = _getch();
+        exit(1);
+    }
+
+    // GetThatUninstaller
+    std::string chkFr24 = rootDir + "GetThatUninstaller.exe";
+    std::cout << chkFr24;
+    std::ifstream file24(chkFr24);
+
+    if (file24.good()) {
+        std::cout << "\nFile exists\n";
+    }
+    else {
+        std::cout << "\nFile does not exist\n";
+        std::cout << "\nPlease re install GetThatOS\n";
+        char ch24 = _getch();
+        exit(1);
+    }
+
+
     std::cout << "\nAll files validated\nPress any key to exit";
-    char ch22 = _getch();
+    char ch25 = _getch();
     return 0;
 }
 
