@@ -58,8 +58,6 @@
             button21 = new Button();
             button22 = new Button();
             label7 = new Label();
-            button11 = new Button();
-            label8 = new Label();
             button12 = new Button();
             textBox1 = new TextBox();
             label9 = new Label();
@@ -96,6 +94,8 @@
             button51 = new Button();
             button52 = new Button();
             button53 = new Button();
+            label8 = new Label();
+            button11 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -425,26 +425,6 @@
             label7.Name = "label7";
             label7.Size = new Size(0, 37);
             label7.TabIndex = 10;
-            // 
-            // button11
-            // 
-            button11.Location = new Point(554, 257);
-            button11.Name = "button11";
-            button11.Size = new Size(75, 23);
-            button11.TabIndex = 11;
-            button11.Text = "Info";
-            button11.UseVisualStyleBackColor = true;
-            button11.Click += button11_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(365, 261);
-            label8.Name = "label8";
-            label8.Size = new Size(184, 15);
-            label8.TabIndex = 12;
-            label8.Text = "Info About Downloading This OS:";
             // 
             // button12
             // 
@@ -865,6 +845,29 @@
             button53.UseVisualStyleBackColor = true;
             button53.Click += button53_Click;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(365, 261);
+            label8.Name = "label8";
+            label8.Size = new Size(0, 15);
+            label8.TabIndex = 12;
+            // 
+            // button11
+            // 
+            button11.BackColor = Color.White;
+            button11.Enabled = false;
+            button11.ForeColor = Color.Black;
+            button11.Location = new Point(554, 257);
+            button11.Name = "button11";
+            button11.Size = new Size(75, 23);
+            button11.TabIndex = 11;
+            button11.Text = "Info";
+            button11.UseVisualStyleBackColor = false;
+            button11.Visible = false;
+            button11.Click += button11_Click;
+            // 
             // MainWindowMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -923,8 +926,6 @@
         private Button button8;
         private Button button9;
         private Label label7;
-        private Button button11;
-        private Label label8;
         private Button button12;
         private Button button13;
         private Button button14;
@@ -973,5 +974,7 @@
         private Button button52;
         private Button button53;
         private Button button2;
+        private Label label8;
+        private Button button11;
     }
 }

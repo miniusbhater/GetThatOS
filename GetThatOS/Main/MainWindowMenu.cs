@@ -68,7 +68,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.2.8");
+            Console.WriteLine("0.2.9");
             InitializeComponent();
 
 
@@ -83,7 +83,7 @@ namespace GetThatOS.Main
             DisableUnwantedButtons();
             GetDocs();
             string osEnv = System.Environment.OSVersion.ToString();
-            this.Text = $"GetThatOS 0.2.8 | {osEnv}";
+            this.Text = $"GetThatOS 0.2.9 | {osEnv}";
 
         }
 
@@ -1055,7 +1055,7 @@ namespace GetThatOS.Main
             if (macos15)
             {
                 string directory = textBox1.Text;
-                DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/09/16/082-33200-A_9FRARUF9NM/jnf31ewnvxlmf5ld7l7n7hzv6lkd6fiuz9/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg15.dmg"), () =>
+                DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/22/06/047-96175-A_196UW6QK9G/dx1bmt6mb0q3llh0iyingau9ld5liod96r/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg15.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");
@@ -1065,7 +1065,7 @@ namespace GetThatOS.Main
             if (macos14)
             {
                 string directory = textBox1.Text;
-                DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/40/16/082-11498-A_J7T1GLHFVZ/chr3rxmbukm8zmyun90r1gz1wodsaeuzda/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg14.dmg"), () =>
+                DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/23/16/047-96015-A_F2ZJ8P7940/aknn1yshpkeeg1l3hgz7saai1d0zguw31y/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg14.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");
@@ -1075,7 +1075,7 @@ namespace GetThatOS.Main
             if (macos13)
             {
                 string directory = textBox1.Text;
-                DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/61/08/082-11327-A_JKF2NNDDY8/aaxgevztdm1i5v6q6xousfc44xa90ykmk0/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg13.dmg"), () =>
+                DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/09/46/093-22004-A_QNZEDC334I/phigx2zvoggml6sh79my4y51fnvgy8hix4/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg13.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");

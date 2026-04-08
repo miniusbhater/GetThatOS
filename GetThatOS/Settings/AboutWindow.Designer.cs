@@ -55,7 +55,7 @@
             label2.Name = "label2";
             label2.Size = new Size(129, 26);
             label2.TabIndex = 3;
-            label2.Text = "Version 0.2.8";
+            label2.Text = "Version 0.2.9";
             // 
             // label3
             // 
