@@ -63,11 +63,11 @@ namespace GetThatOS.Main
         bool macos4 = false;
         bool macos3 = false;
         bool macos2 = false;
-        bool macos = false;        
+        bool macos = false;
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.3.0");
+            Console.WriteLine("0.3.1");
             InitializeComponent();
 
 
@@ -82,7 +82,7 @@ namespace GetThatOS.Main
             DisableUnwantedButtons();
             GetDocs();
             string osEnv = System.Environment.OSVersion.ToString();
-            this.Text = $"GetThatOS 0.3.0 | {osEnv}";
+            this.Text = $"GetThatOS 0.3.1 | {osEnv}";
 
         }
 
@@ -129,8 +129,8 @@ namespace GetThatOS.Main
         public void DisableUnwantedButtons()
         {
 
-            button11.Enabled = false;
-            button11.Visible = false;
+            button11.Enabled = true;
+            button11.Visible = true;
             button12.Enabled = false;
             button12.Visible = false;
 
@@ -181,7 +181,7 @@ namespace GetThatOS.Main
 
         private void button11_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Windows 11 - XP will be downloaded from Archive.org");
+            MessageBox.Show("Windows 11 - XP and OSX 10.4 - 10.7 & 10.9 will be downloaded from Archive.org");
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -883,128 +883,174 @@ namespace GetThatOS.Main
         {
             if (Windows11)
             {
-                
-               MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
+                label10.Visible = true;
+                label10.Text = "Downloading: https://archive.org/download/windows-11-24h2-iso_202501/Win11_24H2_English_x64.iso";
+                label10.Refresh();
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/windows-11-24h2-iso_202501/Win11_24H2_English_x64.iso", Path.Combine(directory, "Windows11.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (windows10)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://archive.org/download/windows-10-22h2-englishus/Win10_22H2_English_x64.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
-                DownloadFileWithProgress("https://archive.org/download/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2023_x64_dvd_c29e4bb3/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2023_x64_dvd_c29e4bb3.iso", Path.Combine(directory, "Windows10.iso"), () =>
+                DownloadFileWithProgress("https://archive.org/download/windows-10-22h2-englishus/Win10_22H2_English_x64.iso", Path.Combine(directory, "Windows10.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (windows81)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://archive.org/download/win-8.1-english-x-64-x-86/Win8.1_English_x64.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/win-8.1-english-x-64-x-86/Win8.1_English_x64.iso", Path.Combine(directory, "Windows8-1.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (windows8)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://archive.org/download/windows-8-x-64/Windows%208%20x64.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/windows-8-x-64/Windows%208%20x64.iso", Path.Combine(directory, "Windows8.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (windows7)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://archive.org/download/Windows7-iso/win7_64_bit.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/Windows7-iso/win7_64_bit.iso", Path.Combine(directory, "Windows7.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (windowsvista)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://archive.org/download/windows-vista-64bit_202303/Windows_Vista_64bit.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/windows-vista-64bit_202303/Windows_Vista_64bit.iso", Path.Combine(directory, "WindowsVista.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (windowsxp)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://archive.org/download/WinXPProSP3x86/en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/WinXPProSP3x86/en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso", Path.Combine(directory, "WindowsXP.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (windowsme)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/me/Windows.Me.115.-.OEM.Full.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/me/Windows.Me.115.-.OEM.Full.iso", Path.Combine(directory, "WindowsME.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (windows2000)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/2k/5.00.2195.1_x86fre_Professional_en-us-W2PFPP_EN.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/2k/5.00.2195.1_x86fre_Professional_en-us-W2PFPP_EN.iso", Path.Combine(directory, "Win2k.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (windows98)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/98/Windows.98.Second.Edition.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/98/Windows.98.Second.Edition.iso", Path.Combine(directory, "Windows.98.Second.Edition.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (windows95)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/95/windows95b.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/95/windows95b.iso", Path.Combine(directory, "windows95.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (windows31)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/3.1/Disk01-06.img";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
 
@@ -1016,11 +1062,15 @@ namespace GetThatOS.Main
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/3.1/Disk06.img", Path.Combine(directory, "disk06.img"), () =>
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 }))))));
             }
 
             if (windows3)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/3.0/DISK01-05.IMG";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
 
@@ -1031,11 +1081,15 @@ namespace GetThatOS.Main
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/3.0/DISK05.IMG", Path.Combine(directory, "disk05.img"), () =>
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 })))));
             }
 
             if (windows2)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/2.03/disk1-5.img";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/2.03/disk1.img", Path.Combine(directory, "disk1.img"), () =>
@@ -1045,12 +1099,16 @@ namespace GetThatOS.Main
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/2.03/disk5.img", Path.Combine(directory, "disk5.img"), () =>
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 })))));
 
             }
 
             if (windows)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/1.03/D1_Setup-D6_Write.img";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
 
@@ -1062,45 +1120,61 @@ namespace GetThatOS.Main
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/1.03/D6_Write.img", Path.Combine(directory, "D6_Write.img"), () =>
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 }))))));
 
             }
 
             if (macos15)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://swcdn.apple.com/content/downloads/22/06/047-96175-A_196UW6QK9G/dx1bmt6mb0q3llh0iyingau9ld5liod96r/InstallAssistant.pkg";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/22/06/047-96175-A_196UW6QK9G/dx1bmt6mb0q3llh0iyingau9ld5liod96r/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg15.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos14)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://swcdn.apple.com/content/downloads/23/16/047-96015-A_F2ZJ8P7940/aknn1yshpkeeg1l3hgz7saai1d0zguw31y/InstallAssistant.pkg";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/23/16/047-96015-A_F2ZJ8P7940/aknn1yshpkeeg1l3hgz7saai1d0zguw31y/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg14.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos13)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://swcdn.apple.com/content/downloads/09/46/093-22004-A_QNZEDC334I/phigx2zvoggml6sh79my4y51fnvgy8hix4/InstallAssistant.pkg";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/09/46/093-22004-A_QNZEDC334I/phigx2zvoggml6sh79my4y51fnvgy8hix4/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg13.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos12)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://swcdn.apple.com/content/downloads/46/57/052-60131-A_KM2RH04C2D/9yzvba1uvpem2wuo95r459qno57qaizwf2/InstallAssistant.pkg";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
@@ -1108,17 +1182,22 @@ namespace GetThatOS.Main
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos11)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: http://swcdn.apple.com/content/downloads/14/38/042-45246-A_NLFOFLCJFZ/jk992zbv98sdzz3rgc7mrccjl3l22ruk1c/InstallAssistant.pkg";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("http://swcdn.apple.com/content/downloads/14/38/042-45246-A_NLFOFLCJFZ/jk992zbv98sdzz3rgc7mrccjl3l22ruk1c/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg11.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
@@ -1160,109 +1239,144 @@ namespace GetThatOS.Main
 
             if (macos10_12)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg", Path.Combine(directory, "InstallMacOSX10.12.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos10_11)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg", Path.Combine(directory, "InstallMacOSX10.11.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos10_10)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg", Path.Combine(directory, "InstallMacOSX10.10.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos10_9)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://archive.org/download/os-x-mavericks-10.9.5/OS%20X%20Mavericks%2010.9.5.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
-                string downl = "https://archive.org/details/os-x-mavericks-10.9.5";
-                ProcessStartInfo psi = new ProcessStartInfo
+                string directory = textBox1.Text;
+                DownloadFileWithProgress("https://archive.org/download/os-x-mavericks-10.9.5/OS%20X%20Mavericks%2010.9.5.iso", Path.Combine(directory, "OSXMavericks.iso"), () =>
+
                 {
-                    FileName = downl,
-                    UseShellExecute = true
-                };
-                Process.Start(psi);
+                    MessageBox.Show("Download complete");
+                    label10.Visible = false;
+                });           
             }
 
             if (macos10_8)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://updates.cdn-apple.com/2021/macos/031-0627-20210614-90D11F33-1A65-42DD-BBEA-E1D9F43A6B3F/InstallMacOSX.dmg";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://updates.cdn-apple.com/2021/macos/031-0627-20210614-90D11F33-1A65-42DD-BBEA-E1D9F43A6B3F/InstallMacOSX.dmg", Path.Combine(directory, "InstallMacOSX10.8.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos10_7)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://updates.cdn-apple.com/2021/macos/041-7683-20210614-E610947E-C7CE-46EB-8860-D26D71F0D3EA/InstallMacOSX.dmg";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://updates.cdn-apple.com/2021/macos/041-7683-20210614-E610947E-C7CE-46EB-8860-D26D71F0D3EA/InstallMacOSX.dmg", Path.Combine(directory, "InstallMacOSX10.7.dmg"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos10_6)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://archive.org/download/mac-os-x-10.6-snow-leopard-retail/Mac_OS_X_10.6_Snow_Leopard_Retail.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
-                string downl = "https://archive.org/details/mac-os-x-10.6-snow-leopard-retail";
-                ProcessStartInfo psi = new ProcessStartInfo
+                string directory = textBox1.Text;
+                DownloadFileWithProgress("https://archive.org/download/mac-os-x-10.6-snow-leopard-retail/Mac_OS_X_10.6_Snow_Leopard_Retail.iso", Path.Combine(directory, "OSXSnowLeopard.iso"), () =>
+
                 {
-                    FileName = downl,
-                    UseShellExecute = true
-                };
-                Process.Start(psi);
+                    MessageBox.Show("Download complete");
+                    label10.Visible = false;
+                });      
             }
 
             if (macos10_5)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://archive.org/download/OsxLeopardInstall/osx%20leopard%20install.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
-                string downl = "https://archive.org/details/OsxLeopardInstall";
-                ProcessStartInfo psi = new ProcessStartInfo
+                string directory = textBox1.Text;
+                DownloadFileWithProgress("https://archive.org/download/OsxLeopardInstall/osx%20leopard%20install.iso", Path.Combine(directory, "OSXLeopard.iso"), () =>
+
                 {
-                    FileName = downl,
-                    UseShellExecute = true
-                };
-                Process.Start(psi);
+                    MessageBox.Show("Download complete");
+                    label10.Visible = false;
+                });
             }
 
             if (macos10_4)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://archive.org/download/mac-os-x-tiger-intelppc/Mac%20OS%20X%20Tiger%2010.4.5%20%28Intel%29.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
-                string downl = "https://archive.org/details/mac-os-x-tiger-intelppc";
-                ProcessStartInfo psi = new ProcessStartInfo
+                string directory = textBox1.Text;
+                DownloadFileWithProgress("https://archive.org/download/mac-os-x-tiger-intelppc/Mac%20OS%20X%20Tiger%2010.4.5%20%28Intel%29.iso", Path.Combine(directory, "OSXSnowTiger.iso"), () =>
+
                 {
-                    FileName = downl,
-                    UseShellExecute = true
-                };
-                Process.Start(psi);
+                    MessageBox.Show("Download complete");
+                    label10.Visible = false;
+                });          
             }
 
             if (macos10_3)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/10.3/Apple.Mac.OS.X.10.3.0.-.Disk.1-3.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/10.3/Apple.Mac.OS.X.10.3.0.-.Disk.1.iso", Path.Combine(directory, "osx-10.3.disk1.iso"), () =>
@@ -1270,11 +1384,15 @@ namespace GetThatOS.Main
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/10.3/Apple.Mac.OS.X.10.3.0.-.Disk.3.iso", Path.Combine(directory, "osx-10.3.disk3.iso"), () =>
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 })));
             }
 
             if (macos10_2)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/10.2/disk1-2.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/10.2/disk1.iso", Path.Combine(directory, "osx-10.2.disk1.iso"), () =>
@@ -1282,66 +1400,90 @@ namespace GetThatOS.Main
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 }));
             }
 
             if (macos10_1)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/10.1/osx_101_5g64_install.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/10.1/osx_101_5g64_install.iso", Path.Combine(directory, "osx-10.1.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos10_0)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/osx10.0/osx-10.0.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/osx10.0/osx-10.0.iso", Path.Combine(directory, "osx-10.0.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos9)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/9.2/macos_921_ppc.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/9.2/macos_921_ppc.iso", Path.Combine(directory, "macos_921_ppc.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos8)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/8.0/Apple.MacOS.8.0.m68k.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/8.0/Apple.MacOS.8.0.m68k.iso", Path.Combine(directory, "Apple.MacOS.8.0.m68k.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos7)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/7/System.7.1.CD.iso";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/7/System.7.1.CD.iso", Path.Combine(directory, "System.7.1.CD.iso"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos6)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/6/Printing.Tools|System.Tools|Utilities.1-2.img";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/6/Printing.Tools.img", Path.Combine(directory, "Printing.Tools.img"), () =>
@@ -1350,11 +1492,15 @@ namespace GetThatOS.Main
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/6/Utilities.2.img", Path.Combine(directory, "Utilities.2.img"), () =>
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 }))));
             }
 
             if (macos5)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/5.0/System.Tools.1-2|Utilities.1-2.img";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/5.0/System.Tools.1.img", Path.Combine(directory, "System.Tools.1.img"), () =>
@@ -1363,11 +1509,15 @@ namespace GetThatOS.Main
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/5.0/Utilities.2.img", Path.Combine(directory, "Utilities.2.img"), () =>
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 }))));
             }
 
             if (macos4)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/4/System.Tools.2.0.1.img|Utilities.2.1.Disk.1.img|Utilities.2.1.Disk.2.img";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/4/System.Tools.2.0.1.img", Path.Combine(directory, "System.Tools.2.0.1.img"), () =>
@@ -1375,11 +1525,15 @@ namespace GetThatOS.Main
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/4/Utilities.2.1.Disk.2.img", Path.Combine(directory, "Utilities.2.1.Disk.2.img"), () =>
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 })));
             }
 
             if (macos3)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/3/System.Tools.512ke.v1.0.img|Utilities.1.0.img";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/3/System.Tools.512ke.v1.0.img", Path.Combine(directory, "System.Tools.512ke.v1.0.img"), () =>
@@ -1387,28 +1541,37 @@ namespace GetThatOS.Main
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 }));
             }
 
             if (macos2)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/sys2/System.Disk.img";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/sys2/System.Disk.img", Path.Combine(directory, "System.Disk.System.Software.2.img"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
             if (macos)
             {
+                label10.Visible = true;
+                label10.Text = "Downloading: https://github.com/miniusbhater/diskimages/releases/download/sys1/System.Disk.img";
+                label10.Refresh();
                 MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/sys1/System.Disk.img", Path.Combine(directory, "System.Disk.img"), () =>
 
                 {
                     MessageBox.Show("Download complete");
+                    label10.Visible = false;
                 });
             }
 
@@ -2657,6 +2820,11 @@ namespace GetThatOS.Main
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }

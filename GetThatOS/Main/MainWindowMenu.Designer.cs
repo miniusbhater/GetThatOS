@@ -96,6 +96,7 @@
             button53 = new Button();
             label8 = new Label();
             button11 = new Button();
+            label10 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -857,7 +858,6 @@
             // button11
             // 
             button11.BackColor = Color.White;
-            button11.Enabled = false;
             button11.ForeColor = Color.Black;
             button11.Location = new Point(554, 257);
             button11.Name = "button11";
@@ -865,15 +865,27 @@
             button11.TabIndex = 11;
             button11.Text = "Info";
             button11.UseVisualStyleBackColor = false;
-            button11.Visible = false;
             button11.Click += button11_Click;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.Location = new Point(15, 351);
+            label10.Name = "label10";
+            label10.Size = new Size(61, 12);
+            label10.TabIndex = 18;
+            label10.Text = "Downloading: ";
+            label10.Visible = false;
+            label10.Click += label10_Click;
             // 
             // MainWindowMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(641, 360);
+            ClientSize = new Size(641, 364);
+            Controls.Add(label10);
             Controls.Add(flowLayoutPanel3);
             Controls.Add(button10);
             Controls.Add(label9);
@@ -976,5 +988,6 @@
         private Button button2;
         private Label label8;
         private Button button11;
+        private Label label10;
     }
 }
