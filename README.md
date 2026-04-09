@@ -37,7 +37,7 @@ Tested on Manjaro Linux, Arch linux and Ubuntu
 
 
 #### Thank you to [xenonorsomething](https://github.com/XenonOrSomething) for the logo!
-
+#### Some images now come from Internet Archive
 
 
 
