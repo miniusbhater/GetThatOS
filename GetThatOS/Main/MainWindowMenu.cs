@@ -1,5 +1,4 @@
-﻿using GetThatOS.Info;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,7 +67,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.2.9");
+            Console.WriteLine("0.3.0");
             InitializeComponent();
 
 
@@ -83,7 +82,7 @@ namespace GetThatOS.Main
             DisableUnwantedButtons();
             GetDocs();
             string osEnv = System.Environment.OSVersion.ToString();
-            this.Text = $"GetThatOS 0.2.9 | {osEnv}";
+            this.Text = $"GetThatOS 0.3.0 | {osEnv}";
 
         }
 
@@ -182,8 +181,7 @@ namespace GetThatOS.Main
 
         private void button11_Click(object sender, EventArgs e)
         {
-            UUPDumpInfo UUPDumpInfo = new UUPDumpInfo();
-            UUPDumpInfo.Show();
+            MessageBox.Show("Windows 11 - XP will be downloaded from Archive.org");
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -885,6 +883,8 @@ namespace GetThatOS.Main
         {
             if (Windows11)
             {
+                
+               MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/windows-11-24h2-iso_202501/Win11_24H2_English_x64.iso", Path.Combine(directory, "Windows11.iso"), () =>
 
@@ -895,6 +895,7 @@ namespace GetThatOS.Main
 
             if (windows10)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2023_x64_dvd_c29e4bb3/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2023_x64_dvd_c29e4bb3.iso", Path.Combine(directory, "Windows10.iso"), () =>
 
@@ -905,6 +906,7 @@ namespace GetThatOS.Main
 
             if (windows81)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/win-8.1-english-x-64-x-86/Win8.1_English_x64.iso", Path.Combine(directory, "Windows8-1.iso"), () =>
 
@@ -915,6 +917,7 @@ namespace GetThatOS.Main
 
             if (windows8)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/windows-8-x-64/Windows%208%20x64.iso", Path.Combine(directory, "Windows8.iso"), () =>
 
@@ -925,6 +928,7 @@ namespace GetThatOS.Main
 
             if (windows7)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/Windows7-iso/win7_64_bit.iso", Path.Combine(directory, "Windows7.iso"), () =>
 
@@ -935,6 +939,7 @@ namespace GetThatOS.Main
 
             if (windowsvista)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/windows-vista-64bit_202303/Windows_Vista_64bit.iso", Path.Combine(directory, "WindowsVista.iso"), () =>
 
@@ -945,6 +950,7 @@ namespace GetThatOS.Main
 
             if (windowsxp)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://archive.org/download/WinXPProSP3x86/en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso", Path.Combine(directory, "WindowsXP.iso"), () =>
 
@@ -955,6 +961,7 @@ namespace GetThatOS.Main
 
             if (windowsme)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/me/Windows.Me.115.-.OEM.Full.iso", Path.Combine(directory, "WindowsME.iso"), () =>
 
@@ -965,6 +972,7 @@ namespace GetThatOS.Main
 
             if (windows2000)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/2k/5.00.2195.1_x86fre_Professional_en-us-W2PFPP_EN.iso", Path.Combine(directory, "Win2k.iso"), () =>
 
@@ -975,6 +983,7 @@ namespace GetThatOS.Main
 
             if (windows98)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/98/Windows.98.Second.Edition.iso", Path.Combine(directory, "Windows.98.Second.Edition.iso"), () =>
 
@@ -985,6 +994,7 @@ namespace GetThatOS.Main
 
             if (windows95)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/95/windows95b.iso", Path.Combine(directory, "windows95.iso"), () =>
 
@@ -995,6 +1005,7 @@ namespace GetThatOS.Main
 
             if (windows31)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
 
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/3.1/Disk01.img", Path.Combine(directory, "disk01.img"), () =>
@@ -1010,6 +1021,7 @@ namespace GetThatOS.Main
 
             if (windows3)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
 
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/3.0/DISK01.IMG", Path.Combine(directory, "disk01.img"), () =>
@@ -1024,6 +1036,7 @@ namespace GetThatOS.Main
 
             if (windows2)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/2.03/disk1.img", Path.Combine(directory, "disk1.img"), () =>
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/2.03/disk2.img", Path.Combine(directory, "disk2.img"), () =>
@@ -1038,6 +1051,7 @@ namespace GetThatOS.Main
 
             if (windows)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
 
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/1.03/D1_Setup.img", Path.Combine(directory, "D1_Setup.img"), () =>
@@ -1054,6 +1068,7 @@ namespace GetThatOS.Main
 
             if (macos15)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/22/06/047-96175-A_196UW6QK9G/dx1bmt6mb0q3llh0iyingau9ld5liod96r/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg15.dmg"), () =>
 
@@ -1064,6 +1079,7 @@ namespace GetThatOS.Main
 
             if (macos14)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/23/16/047-96015-A_F2ZJ8P7940/aknn1yshpkeeg1l3hgz7saai1d0zguw31y/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg14.dmg"), () =>
 
@@ -1074,6 +1090,7 @@ namespace GetThatOS.Main
 
             if (macos13)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/09/46/093-22004-A_QNZEDC334I/phigx2zvoggml6sh79my4y51fnvgy8hix4/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg13.dmg"), () =>
 
@@ -1084,6 +1101,8 @@ namespace GetThatOS.Main
 
             if (macos12)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://swcdn.apple.com/content/downloads/46/57/052-60131-A_KM2RH04C2D/9yzvba1uvpem2wuo95r459qno57qaizwf2/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg12.dmg"), () =>
 
@@ -1094,6 +1113,7 @@ namespace GetThatOS.Main
 
             if (macos11)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("http://swcdn.apple.com/content/downloads/14/38/042-45246-A_NLFOFLCJFZ/jk992zbv98sdzz3rgc7mrccjl3l22ruk1c/InstallAssistant.pkg", Path.Combine(directory, "InstallAssistant.pkg11.dmg"), () =>
 
@@ -1104,6 +1124,7 @@ namespace GetThatOS.Main
 
             if (macos10_15)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string downl = "https://apps.apple.com/us/app/macos-catalina/id1466841314?mt=12";
                 ProcessStartInfo psi = new ProcessStartInfo
                 {
@@ -1115,6 +1136,7 @@ namespace GetThatOS.Main
 
             if (macos10_14)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string downl = "https://apps.apple.com/us/app/macos-mojave/id1398502828?mt=12";
                 ProcessStartInfo psi = new ProcessStartInfo
                 {
@@ -1126,6 +1148,7 @@ namespace GetThatOS.Main
 
             if (macos10_13)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string downl = "https://itunes.apple.com/us/app/macos-high-sierra/id1246284741";
                 ProcessStartInfo psi = new ProcessStartInfo
                 {
@@ -1137,6 +1160,7 @@ namespace GetThatOS.Main
 
             if (macos10_12)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg", Path.Combine(directory, "InstallMacOSX10.12.dmg"), () =>
 
@@ -1147,6 +1171,7 @@ namespace GetThatOS.Main
 
             if (macos10_11)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg", Path.Combine(directory, "InstallMacOSX10.11.dmg"), () =>
 
@@ -1157,6 +1182,7 @@ namespace GetThatOS.Main
 
             if (macos10_10)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg", Path.Combine(directory, "InstallMacOSX10.10.dmg"), () =>
 
@@ -1167,6 +1193,7 @@ namespace GetThatOS.Main
 
             if (macos10_9)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string downl = "https://archive.org/details/os-x-mavericks-10.9.5";
                 ProcessStartInfo psi = new ProcessStartInfo
                 {
@@ -1178,6 +1205,7 @@ namespace GetThatOS.Main
 
             if (macos10_8)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://updates.cdn-apple.com/2021/macos/031-0627-20210614-90D11F33-1A65-42DD-BBEA-E1D9F43A6B3F/InstallMacOSX.dmg", Path.Combine(directory, "InstallMacOSX10.8.dmg"), () =>
 
@@ -1188,6 +1216,7 @@ namespace GetThatOS.Main
 
             if (macos10_7)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://updates.cdn-apple.com/2021/macos/041-7683-20210614-E610947E-C7CE-46EB-8860-D26D71F0D3EA/InstallMacOSX.dmg", Path.Combine(directory, "InstallMacOSX10.7.dmg"), () =>
 
@@ -1198,6 +1227,7 @@ namespace GetThatOS.Main
 
             if (macos10_6)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string downl = "https://archive.org/details/mac-os-x-10.6-snow-leopard-retail";
                 ProcessStartInfo psi = new ProcessStartInfo
                 {
@@ -1209,6 +1239,7 @@ namespace GetThatOS.Main
 
             if (macos10_5)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string downl = "https://archive.org/details/OsxLeopardInstall";
                 ProcessStartInfo psi = new ProcessStartInfo
                 {
@@ -1220,6 +1251,7 @@ namespace GetThatOS.Main
 
             if (macos10_4)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string downl = "https://archive.org/details/mac-os-x-tiger-intelppc";
                 ProcessStartInfo psi = new ProcessStartInfo
                 {
@@ -1231,6 +1263,7 @@ namespace GetThatOS.Main
 
             if (macos10_3)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/10.3/Apple.Mac.OS.X.10.3.0.-.Disk.1.iso", Path.Combine(directory, "osx-10.3.disk1.iso"), () =>
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/10.3/Apple.Mac.OS.X.10.3.0.-.Disk.2.iso", Path.Combine(directory, "osx-10.3.disk2.iso"), () =>
@@ -1242,6 +1275,7 @@ namespace GetThatOS.Main
 
             if (macos10_2)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/10.2/disk1.iso", Path.Combine(directory, "osx-10.2.disk1.iso"), () =>
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/10.2/disk2.iso", Path.Combine(directory, "osx-10.2.disk2.iso"), () =>
@@ -1253,6 +1287,7 @@ namespace GetThatOS.Main
 
             if (macos10_1)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/10.1/osx_101_5g64_install.iso", Path.Combine(directory, "osx-10.1.iso"), () =>
 
@@ -1263,6 +1298,7 @@ namespace GetThatOS.Main
 
             if (macos10_0)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/osx10.0/osx-10.0.iso", Path.Combine(directory, "osx-10.0.iso"), () =>
 
@@ -1273,6 +1309,7 @@ namespace GetThatOS.Main
 
             if (macos9)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/9.2/macos_921_ppc.iso", Path.Combine(directory, "macos_921_ppc.iso"), () =>
 
@@ -1283,6 +1320,7 @@ namespace GetThatOS.Main
 
             if (macos8)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/8.0/Apple.MacOS.8.0.m68k.iso", Path.Combine(directory, "Apple.MacOS.8.0.m68k.iso"), () =>
 
@@ -1293,6 +1331,7 @@ namespace GetThatOS.Main
 
             if (macos7)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/7/System.7.1.CD.iso", Path.Combine(directory, "System.7.1.CD.iso"), () =>
 
@@ -1303,6 +1342,7 @@ namespace GetThatOS.Main
 
             if (macos6)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/6/Printing.Tools.img", Path.Combine(directory, "Printing.Tools.img"), () =>
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/6/System.Tools.img", Path.Combine(directory, "System.Tools.img"), () =>
@@ -1315,6 +1355,7 @@ namespace GetThatOS.Main
 
             if (macos5)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/5.0/System.Tools.1.img", Path.Combine(directory, "System.Tools.1.img"), () =>
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/5.0/System.Tools.2.img", Path.Combine(directory, "System.Tools.2.img"), () =>
@@ -1327,6 +1368,7 @@ namespace GetThatOS.Main
 
             if (macos4)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/4/System.Tools.2.0.1.img", Path.Combine(directory, "System.Tools.2.0.1.img"), () =>
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/4/Utilities.2.1.Disk.1.img", Path.Combine(directory, "Utilities.2.1.Disk.1.img"), () =>
@@ -1338,6 +1380,7 @@ namespace GetThatOS.Main
 
             if (macos3)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/3/System.Tools.512ke.v1.0.img", Path.Combine(directory, "System.Tools.512ke.v1.0.img"), () =>
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/3/Utilities.1.0.img", Path.Combine(directory, "Utilities.1.0.img"), () =>
@@ -1349,6 +1392,7 @@ namespace GetThatOS.Main
 
             if (macos2)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/sys2/System.Disk.img", Path.Combine(directory, "System.Disk.System.Software.2.img"), () =>
 
@@ -1359,6 +1403,7 @@ namespace GetThatOS.Main
 
             if (macos)
             {
+                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
                 string directory = textBox1.Text;
                 DownloadFileWithProgress("https://github.com/miniusbhater/diskimages/releases/download/sys1/System.Disk.img", Path.Combine(directory, "System.Disk.img"), () =>
 
