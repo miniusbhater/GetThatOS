@@ -258,10 +258,10 @@ namespace GetThatOSSetup
                 webclient25.DownloadFile(new Uri(download25), output25);
             }
 
-            label5.Text = ("Downloading GetThatUpdater");
+            label5.Text = ("Downloading GetThatUpdate");
 
-            string download26 = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatUpdater.exe";
-            string output26 = Path.Combine(CreateFolder, "GetThatUpdater.exe");
+            string download26 = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatUpdate.exe";
+            string output26 = Path.Combine(CreateFolder, "GetThatUpdate.exe");
 
             using (WebClient webclient26 = new WebClient())
             {
