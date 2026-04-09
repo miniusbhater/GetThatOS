@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::cout << "GetThatIntegrity 1.0.0\n";
+    std::cout << "GetThatIntegrity 1.0.2\n";
     std::cout << "Beginning checks\n";
     std:: string rootDir = "C:\\Program Files (x86)\\GetThatOS\\";
     std:: string imgDir = "C:\\Program Files (x86)\\GetThatOS\\LogosAndImages\\";
@@ -383,6 +383,21 @@ int main()
         std::cout << "\nFile does not exist\n";
         std::cout << "\nPlease re install GetThatOS\n";
         char ch24 = _getch();
+        exit(1);
+    }
+
+    // GetThatUpdate
+    std::string chkFr25 = rootDir + "GetThatUpdate.exe";
+    std::cout << chkFr25;
+    std::ifstream file25(chkFr25);
+
+    if (file25.good()) {
+        std::cout << "\nFile exists\n";
+    }
+    else {
+        std::cout << "\nFile does not exist\n";
+        std::cout << "\nPlease re install GetThatOS\n";
+        char ch25 = _getch();
         exit(1);
     }
 
