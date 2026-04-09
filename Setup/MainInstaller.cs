@@ -24,19 +24,25 @@ namespace GetThatOSSetup
         private async void button1_Click(object sender, EventArgs e)
         {
             label5.Visible = true;
+            label7.Visible = true;
             label5.Text = ("Creating root folder");
+            label5.Refresh();
             string ProgramFiles = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86);
             string CreateFolder = Path.Combine(ProgramFiles, "GetThatOS");
             Directory.CreateDirectory(CreateFolder);
             label5.Text = ("Installing executable");
+            label5.Refresh();
             string download = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatOS.exe";
             string output = Path.Combine(CreateFolder, "GetThatOS.exe");
+            label7.Text = ($"Downloading: {download}");
+            label7.Refresh();
 
             using (WebClient webclient = new WebClient())
             {
                 webclient.DownloadFile(new Uri(download), output);
             }
             label5.Text = ("Installing repo shorcut");
+            label5.Refresh();
             string downloadurl = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/GetThatOS%20Repository.url";
             string outputurl = Path.Combine(CreateFolder, "GetThatOS Repository.url");
 
@@ -47,12 +53,16 @@ namespace GetThatOSSetup
 
             
             label5.Text = ("Creating resources folder");
+            label5.Refresh();
             string ProgramFiles1 = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86);
             string CreateFolder1 = Path.Combine(ProgramFiles1, "GetThatOS", "LogosAndImages");
             Directory.CreateDirectory(CreateFolder1);
             label5.Text = ("Installing resources");
+            label5.Refresh();
             string download1 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/GetThatOS_logo.ico";
             string output1 = Path.Combine(CreateFolder1, "GetThatOS_logo.ico");
+            label7.Text = ($"Downloading: {download1}");
+            label7.Refresh();
 
             using (WebClient webclient1 = new WebClient())
             {
@@ -61,6 +71,8 @@ namespace GetThatOSSetup
 
             string download2 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/LinuxTux_logo.ico";
             string output2 = Path.Combine(CreateFolder1, "LinuxTux_logo.ico");
+            label7.Text = ($"Downloading: {download2}");
+            label7.Refresh();
 
             using (WebClient webclient2 = new WebClient())
             {
@@ -69,6 +81,8 @@ namespace GetThatOSSetup
 
             string download3 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/MacModern_logo.ico";
             string output3 = Path.Combine(CreateFolder1, "MacModern_logo.ico");
+            label7.Text = ($"Downloading: {download3}");
+            label7.Refresh();
 
             using (WebClient webclient3 = new WebClient())
             {
@@ -77,6 +91,8 @@ namespace GetThatOSSetup
 
             string download4 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/MacFlat_logo.ico";
             string output4 = Path.Combine(CreateFolder1, "MacFlat_logo.ico");
+            label7.Text = ($"Downloading: {download4}");
+            label7.Refresh();
 
             using (WebClient webclient4 = new WebClient())
             {
@@ -85,6 +101,8 @@ namespace GetThatOSSetup
 
             string download5 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/MacOSX_logo.ico";
             string output5 = Path.Combine(CreateFolder1, "MacOSX_logo.ico");
+            label7.Text = ($"Downloading: {download5}");
+            label7.Refresh();
 
             using (WebClient webclient5 = new WebClient())
             {
@@ -93,6 +111,8 @@ namespace GetThatOSSetup
 
             string download6 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/MacPreOSX_logo.ico";
             string output6 = Path.Combine(CreateFolder1, "MacPreOSX_logo.ico");
+            label7.Text = ($"Downloading: {download6}");
+            label7.Refresh();
 
             using (WebClient webclient6 = new WebClient())
             {
@@ -101,6 +121,8 @@ namespace GetThatOSSetup
 
             string download7 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows11_logo.ico";
             string output7 = Path.Combine(CreateFolder1, "Windows11_logo.ico");
+            label7.Text = ($"Downloading: {download7}");
+            label7.Refresh();
 
             using (WebClient webclient7 = new WebClient())
             {
@@ -109,6 +131,8 @@ namespace GetThatOSSetup
 
             string download8 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows10_logo.ico";
             string output8 = Path.Combine(CreateFolder1, "Windows10_logo.ico");
+            label7.Text = ($"Downloading: {download8}");
+            label7.Refresh();
 
             using (WebClient webclient8 = new WebClient())
             {
@@ -117,6 +141,8 @@ namespace GetThatOSSetup
 
             string download9 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows8_logo.ico";
             string output9 = Path.Combine(CreateFolder1, "Windows8_logo.ico");
+            label7.Text = ($"Downloading: {download9}");
+            label7.Refresh();
 
             using (WebClient webclient9 = new WebClient())
             {
@@ -125,6 +151,8 @@ namespace GetThatOSSetup
 
             string download10 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows7_logo.ico";
             string output10 = Path.Combine(CreateFolder1, "Windows7_logo.ico");
+            label7.Text = ($"Downloading: {download10}");
+            label7.Refresh();
 
             using (WebClient webclient10 = new WebClient())
             {
@@ -133,6 +161,8 @@ namespace GetThatOSSetup
 
             string download11 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/WindowsVista_logo.ico";
             string output11 = Path.Combine(CreateFolder1, "WindowsVista_logo.ico");
+            label7.Text = ($"Downloading: {download11}");
+            label7.Refresh();
 
             using (WebClient webclient11 = new WebClient())
             {
@@ -141,6 +171,8 @@ namespace GetThatOSSetup
 
             string download12 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/WindowsXP_logo.ico";
             string output12 = Path.Combine(CreateFolder1, "WindowsXP_logo.ico");
+            label7.Text = ($"Downloading: {download12}");
+            label7.Refresh();
 
             using (WebClient webclient12 = new WebClient())
             {
@@ -149,6 +181,8 @@ namespace GetThatOSSetup
 
             string download13 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/WindowsME_logo.ico";
             string output13 = Path.Combine(CreateFolder1, "WindowsME_logo.ico");
+            label7.Text = ($"Downloading: {download13}");
+            label7.Refresh();
 
             using (WebClient webclient13 = new WebClient())
             {
@@ -157,6 +191,8 @@ namespace GetThatOSSetup
 
             string download14 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows2000_logo.ico";
             string output14 = Path.Combine(CreateFolder1, "Windows2000_logo.ico");
+            label7.Text = ($"Downloading: {download14}");
+            label7.Refresh();
 
             using (WebClient webclient14 = new WebClient())
             {
@@ -165,6 +201,8 @@ namespace GetThatOSSetup
 
             string download15 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows98_logo.ico";
             string output15 = Path.Combine(CreateFolder1, "Windows98_logo.ico");
+            label7.Text = ($"Downloading: {download15}");
+            label7.Refresh();
 
             using (WebClient webclient15 = new WebClient())
             {
@@ -173,6 +211,8 @@ namespace GetThatOSSetup
 
             string download16 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows95_logo.ico";
             string output16 = Path.Combine(CreateFolder1, "Windows95_logo.ico");
+            label7.Text = ($"Downloading: {download16}");
+            label7.Refresh();
 
             using (WebClient webclient16 = new WebClient())
             {
@@ -181,6 +221,8 @@ namespace GetThatOSSetup
 
             string download17 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows3.1_logo.ico";
             string output17 = Path.Combine(CreateFolder1, "Windows3.1_logo.ico");
+            label7.Text = ($"Downloading: {download17}");
+            label7.Refresh();
 
             using (WebClient webclient17 = new WebClient())
             {
@@ -189,6 +231,8 @@ namespace GetThatOSSetup
 
             string download18 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows2_logo.ico";
             string output18 = Path.Combine(CreateFolder1, "Windows2_logo.ico");
+            label7.Text = ($"Downloading: {download18}");
+            label7.Refresh();
 
             using (WebClient webclient18 = new WebClient())
             {
@@ -197,6 +241,8 @@ namespace GetThatOSSetup
 
             string download19 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows_logo.ico";
             string output19 = Path.Combine(CreateFolder1, "Windows_logo.ico");
+            label7.Text = ($"Downloading: {download19}");
+            label7.Refresh();
 
             using (WebClient webclient19 = new WebClient())
             {
@@ -205,6 +251,8 @@ namespace GetThatOSSetup
 
             string download20 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/GetThatOSOther_logo.ico";
             string output20 = Path.Combine(CreateFolder1, "GetThatOSOther_logo.ico");
+            label7.Text = ($"Downloading: {download20}");
+            label7.Refresh();
 
             using (WebClient webclient20 = new WebClient())
             {
@@ -213,6 +261,8 @@ namespace GetThatOSSetup
 
             string download21 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/Windows98953_logo.ico";
             string output21 = Path.Combine(CreateFolder1, "Windows98953_logo.ico");
+            label7.Text = ($"Downloading: {download21}");
+            label7.Refresh();
 
             using (WebClient webclient21 = new WebClient())
             {
@@ -221,6 +271,8 @@ namespace GetThatOSSetup
 
             string download23 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/coconut.jpg";
             string output23 = Path.Combine(CreateFolder1, "coconut.jpg");
+            label7.Text = ($"Downloading: {download23}");
+            label7.Refresh();
 
             using (WebClient webclient23 = new WebClient())
             {
@@ -229,9 +281,12 @@ namespace GetThatOSSetup
 
 
             label5.Text = ("Downloading GetThatIntegrity");
-
+            label5.Refresh();
+            
             string download22 = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatIntegrity.exe";
             string output22 = Path.Combine(CreateFolder, "GetThatIntegrity.exe");
+            label7.Text = ($"Downloading: {download22}");
+            label7.Refresh();
 
             using (WebClient webclient22 = new WebClient())
             {
@@ -239,9 +294,12 @@ namespace GetThatOSSetup
             }
 
             label5.Text = ("Downloading GetThatUptime");
+            label5.Refresh();
 
             string download24 = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatUptime.exe";
             string output24 = Path.Combine(CreateFolder, "GetThatUptime.exe");
+            label7.Text = ($"Downloading: {download24}");
+            label7.Refresh();
 
             using (WebClient webclient24 = new WebClient())
             {
@@ -249,9 +307,12 @@ namespace GetThatOSSetup
             }
 
             label5.Text = ("Downloading GetThatUninstaller");
+            label5.Refresh();
 
             string download25 = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatUninstaller.exe";
             string output25 = Path.Combine(CreateFolder, "GetThatUninstaller.exe");
+            label7.Text = ($"Downloading: {download25}");
+            label7.Refresh();
 
             using (WebClient webclient25 = new WebClient())
             {
@@ -259,9 +320,12 @@ namespace GetThatOSSetup
             }
 
             label5.Text = ("Downloading GetThatUpdate");
+            label5.Refresh();
 
             string download26 = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatUpdate.exe";
             string output26 = Path.Combine(CreateFolder, "GetThatUpdate.exe");
+            label7.Text = ($"Downloading: {download26}");
+            label7.Refresh();
 
             using (WebClient webclient26 = new WebClient())
             {
@@ -272,6 +336,7 @@ namespace GetThatOSSetup
 
 
             label5.Text = ("Creating start menu shortcut");
+            label5.Refresh();
             string gosshortcut = "GetThatOS.lnk";
             string target = @"C:\Program Files (x86)\GetThatOS\GetThatOS.exe";
             string start = Environment.GetFolderPath(Environment.SpecialFolder.StartMenu);
@@ -285,6 +350,7 @@ namespace GetThatOSSetup
 
                 label5.Visible = false;
                 label6.Visible = true;
+                label7.Visible = false;
                 MessageBox.Show("Download complete!");
             }
 

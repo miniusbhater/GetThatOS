@@ -35,13 +35,14 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            label7 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(116, 9);
             label1.Name = "label1";
             label1.Size = new Size(287, 47);
             label1.TabIndex = 0;
@@ -50,7 +51,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(326, 9);
+            label2.Location = new Point(486, 9);
             label2.Name = "label2";
             label2.Size = new Size(77, 15);
             label2.TabIndex = 1;
@@ -59,7 +60,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 72);
+            label3.Location = new Point(84, 65);
             label3.Name = "label3";
             label3.Size = new Size(356, 15);
             label3.TabIndex = 2;
@@ -68,7 +69,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(143, 124);
+            button1.Location = new Point(409, 128);
             button1.Name = "button1";
             button1.Size = new Size(135, 55);
             button1.TabIndex = 3;
@@ -79,11 +80,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(305, 41);
+            label4.Location = new Point(409, 41);
             label4.Name = "label4";
             label4.Size = new Size(31, 15);
             label4.TabIndex = 5;
-            label4.Text = "0.3.0";
+            label4.Text = "0.3.1";
             // 
             // label5
             // 
@@ -98,18 +99,30 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(31, 106);
+            label6.Location = new Point(77, 106);
             label6.Name = "label6";
             label6.Size = new Size(363, 15);
             label6.TabIndex = 7;
             label6.Text = "Install Complete You May Launch GetThatOS From Your Start Menu\r\n";
             label6.Visible = false;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(12, 185);
+            label7.Name = "label7";
+            label7.Size = new Size(61, 12);
+            label7.TabIndex = 8;
+            label7.Text = "Downloading: ";
+            label7.Visible = false;
+            // 
             // MainInstaller
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(415, 191);
+            ClientSize = new Size(575, 205);
+            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -121,7 +134,7 @@
             Name = "MainInstaller";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Setup - 0.3.0";
+            Text = "Setup - 0.3.1";
             Load += MainInstaller_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -136,5 +149,6 @@
         private Label label4;
         private Label label5;
         private Label label6;
+        private Label label7;
     }
 }
