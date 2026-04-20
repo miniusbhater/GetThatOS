@@ -1,4 +1,4 @@
-# GetThatOS <img width="512" height="513" alt="GetThatOS_logo" src="https://github.com/user-attachments/assets/fbbc7db3-d494-4a08-a21f-5748f74f577b" />
+# GetThatOS <img width="256" height="257" alt="GetThatOS_logo" src="https://github.com/user-attachments/assets/fbbc7db3-d494-4a08-a21f-5748f74f577b" />
 
 # ![Downloads](https://img.shields.io/github/downloads/miniusbhater/GetThatOS/total?style=flat) ![GitHub Created At](https://img.shields.io/github/created-at/miniusbhater/GetThatOS?style=flat) ![GitHub Release](https://img.shields.io/github/v/release/miniusbhater/GetThatOS?style=flat)
 
