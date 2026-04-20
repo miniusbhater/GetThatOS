@@ -57,7 +57,7 @@
             label2.Name = "label2";
             label2.Size = new Size(38, 17);
             label2.TabIndex = 2;
-            label2.Text = "0.3.1";
+            label2.Text = "0.3.2";
             // 
             // button1
             // 
