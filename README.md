@@ -10,27 +10,6 @@ A simple and user friendly tool for downloading Operating system disk images
 
 <img width="634" height="384" alt="image" src="https://github.com/user-attachments/assets/f7ac4f6c-9d4a-4724-bfa3-c8d07845c68d" />
 
-
-
-### old image
-![image](https://github.com/user-attachments/assets/71e0fa0c-98ed-4716-b7d7-8016af5765fb)
-
-
-
-### Requires windows 7 or newer with .NET framework 4.7.2 
-Can be run on Vista using this guide to get .NET framework 4.7.2 installed: https://msfn.org/board/topic/178673-tutorial-how-to-install-net-framework-472-on-windows-vista/
-
-
-## old Linux info
-### How to run on linux
-
-First install Wine. Guides can be found at https://gitlab.winehq.org/wine/wine/-/wikis/Download
-
-After you have installed Wine open your terminal and type `wine` followed by the directory of GetThatOS.exe and hit enter
-
-Then GetThatOS should open and function the same as the native windows release
-
-Tested on Manjaro Linux, Arch linux and Ubuntu
 #
 
 
