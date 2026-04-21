@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutWindow));
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
             label4 = new Label();
             SuspendLayout();
             // 
@@ -51,22 +50,11 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Franklin Gothic Medium", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(179, 33);
+            label2.Location = new Point(196, 22);
             label2.Name = "label2";
             label2.Size = new Size(129, 26);
             label2.TabIndex = 3;
-            label2.Text = "Version 0.3.2";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Franklin Gothic Medium", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(179, 9);
-            label3.Name = "label3";
-            label3.Size = new Size(51, 21);
-            label3.TabIndex = 4;
-            label3.Text = "64 Bit";
+            label2.Text = "Version 0.3.3";
             // 
             // label4
             // 
@@ -85,7 +73,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(330, 81);
             Controls.Add(label4);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
@@ -93,6 +80,7 @@
             Name = "AboutWindow";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "About GetThatOS";
+            Load += AboutWindow_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -101,7 +89,6 @@
 
         private Label label1;
         private Label label2;
-        private Label label3;
         private Label label4;
     }
 }

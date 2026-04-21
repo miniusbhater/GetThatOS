@@ -21,7 +21,7 @@ namespace GetThatOS.Main
             Windows11, Windows10, Windows81, Windows8, Windows7, WindowsVista,
             WindowsXP, WindowsME, Windows2000, Windows98, Windows95,
             Windows31, Windows3, Windows2, Windows,
-            MacOS15, MacOS14, MacOS13, MacOS12, MacOS11,
+            MacOS26, MacOS15, MacOS14, MacOS13, MacOS12, MacOS11,
             MacOS10_15, MacOS10_14, MacOS10_13, MacOS10_12, MacOS10_11,
             MacOS10_10, MacOS10_9, MacOS10_8, MacOS10_7, MacOS10_6,
             MacOS10_5, MacOS10_4, MacOS10_3, MacOS10_2, MacOS10_1, MacOS10_0,
@@ -39,7 +39,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.3.2");
+            Console.WriteLine("0.3.3");
             InitializeComponent();
         }
 
@@ -49,7 +49,8 @@ namespace GetThatOS.Main
             DisableUnwantedText();
             DisableUnwantedButtons();
             GetDocs();
-            this.Text = $"GetThatOS 0.3.2 | {Environment.OSVersion}";
+            this.Text = $"GetThatOS 0.3.3 | {Environment.OSVersion}";
+            flowLayoutPanel3.Controls.SetChildIndex(button4, 0);
         }
 
         public void GetDocs()
@@ -142,7 +143,7 @@ namespace GetThatOS.Main
         // macOS tab shit
         private void button3_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile(LogoPath("MacModern_logo.ico"));
+            pictureBox1.Image = Image.FromFile(LogoPath("MacGlass_logo.ico"));
             label2.Visible = true;
             label3.Visible = false;
             label4.Visible = false;
@@ -163,7 +164,7 @@ namespace GetThatOS.Main
             _selectedOS = SelectedOS.None;
         }
 
-       
+
         // Windows version selection
         private void button5_Click(object sender, EventArgs e) => SelectWindows("Windows11_logo.ico", "Windows\n      11", SelectedOS.Windows11, InfoButton: true);
         private void button6_Click(object sender, EventArgs e) => SelectWindows("Windows10_logo.ico", "Windows\n      10", SelectedOS.Windows10, InfoButton: true);
@@ -182,27 +183,28 @@ namespace GetThatOS.Main
         private void button22_Click(object sender, EventArgs e) => SelectWindows("Windows_logo.ico", "Windows", SelectedOS.Windows);
 
         // macOS version selectiobn
-        private void button24_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "MacOS 15", SelectedOS.MacOS15);
-        private void button25_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "MacOS 14", SelectedOS.MacOS14);
-        private void button26_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "MacOS 13", SelectedOS.MacOS13);
-        private void button27_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "MacOS 12", SelectedOS.MacOS12);
-        private void button28_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "MacOS 11", SelectedOS.MacOS11);
-        private void button29_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "MacOS\n 10.15", SelectedOS.MacOS10_15);
-        private void button30_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "MacOS\n 10.14", SelectedOS.MacOS10_14);
-        private void button31_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "MacOS\n 10.13", SelectedOS.MacOS10_13);
-        private void button32_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "MacOS\n 10.12", SelectedOS.MacOS10_12);
-        private void button33_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "MacOS\n 10.11", SelectedOS.MacOS10_11);
-        private void button34_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "MacOS\n 10.10", SelectedOS.MacOS10_10);
-        private void button35_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "MacOS\n  10.9", SelectedOS.MacOS10_9);
-        private void button36_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "MacOS\n  10.8", SelectedOS.MacOS10_8);
-        private void button37_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "MacOS\n  10.7", SelectedOS.MacOS10_7);
-        private void button38_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "MacOS\n  10.6", SelectedOS.MacOS10_6);
-        private void button39_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "MacOS\n  10.5", SelectedOS.MacOS10_5);
-        private void button40_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "MacOS\n  10.4", SelectedOS.MacOS10_4);
-        private void button41_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "MacOS\n  10.3", SelectedOS.MacOS10_3);
-        private void button42_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "MacOS\n  10.2", SelectedOS.MacOS10_2);
-        private void button43_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "MacOS\n  10.1", SelectedOS.MacOS10_1);
-        private void button44_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "MacOS\n  10.0", SelectedOS.MacOS10_0);
+        private void button4_Click_1(object sender, EventArgs e) => SelectMacOS("MacGlass_logo.ico", "macOS 26", SelectedOS.MacOS26);
+        private void button24_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "macOS 15", SelectedOS.MacOS15);
+        private void button25_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "macOS 14", SelectedOS.MacOS14);
+        private void button26_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "macOS 13", SelectedOS.MacOS13);
+        private void button27_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "macOS 12", SelectedOS.MacOS12);
+        private void button28_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "macOS 11", SelectedOS.MacOS11);
+        private void button29_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "macOS\n 10.15", SelectedOS.MacOS10_15);
+        private void button30_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "macOS\n 10.14", SelectedOS.MacOS10_14);
+        private void button31_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "macOS\n 10.13", SelectedOS.MacOS10_13);
+        private void button32_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "macOS\n 10.12", SelectedOS.MacOS10_12);
+        private void button33_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "macOS\n 10.11", SelectedOS.MacOS10_11);
+        private void button34_Click(object sender, EventArgs e) => SelectMacOS("MacFlat_logo.ico", "macOS\n 10.10", SelectedOS.MacOS10_10);
+        private void button35_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "macOS\n  10.9", SelectedOS.MacOS10_9);
+        private void button36_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "macOS\n  10.8", SelectedOS.MacOS10_8);
+        private void button37_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "macOS\n  10.7", SelectedOS.MacOS10_7);
+        private void button38_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "macOS\n  10.6", SelectedOS.MacOS10_6);
+        private void button39_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "macOS\n  10.5", SelectedOS.MacOS10_5);
+        private void button40_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "macOS\n  10.4", SelectedOS.MacOS10_4);
+        private void button41_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "macOS\n  10.3", SelectedOS.MacOS10_3);
+        private void button42_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "macOS\n  10.2", SelectedOS.MacOS10_2);
+        private void button43_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "macOS\n  10.1", SelectedOS.MacOS10_1);
+        private void button44_Click(object sender, EventArgs e) => SelectMacOS("MacOSX_logo.ico", "macOS\n  10.0", SelectedOS.MacOS10_0);
         private void button45_Click(object sender, EventArgs e) => SelectMacOS("MacPreOSX_logo.ico", "MacOS\n     9", SelectedOS.MacOS9);
         private void button46_Click(object sender, EventArgs e) => SelectMacOS("MacPreOSX_logo.ico", "MacOS\n     8", SelectedOS.MacOS8);
         private void button47_Click(object sender, EventArgs e) => SelectMacOS("MacPreOSX_logo.ico", "MacOS\n     7", SelectedOS.MacOS7);
@@ -235,6 +237,7 @@ namespace GetThatOS.Main
                 [SelectedOS.Windows2000] = ("https://github.com/miniusbhater/diskimages/releases/download/2k/5.00.2195.1_x86fre_Professional_en-us-W2PFPP_EN.iso", "Win2k.iso"),
                 [SelectedOS.Windows98] = ("https://github.com/miniusbhater/diskimages/releases/download/98/Windows.98.Second.Edition.iso", "Windows.98.Second.Edition.iso"),
                 [SelectedOS.Windows95] = ("https://github.com/miniusbhater/diskimages/releases/download/95/windows95b.iso", "windows95.iso"),
+                [SelectedOS.MacOS26] = ("https://swcdn.apple.com/content/downloads/40/56/122-28067-A_9B4FJ1TL06/zchwyidn8ubxkpelhytzb05o418bchr2se/InstallAssistant.pkg", "InstallAssistant26.pkg"),
                 [SelectedOS.MacOS15] = ("https://swcdn.apple.com/content/downloads/22/06/047-96175-A_196UW6QK9G/dx1bmt6mb0q3llh0iyingau9ld5liod96r/InstallAssistant.pkg", "InstallAssistant15.pkg"),
                 [SelectedOS.MacOS14] = ("https://swcdn.apple.com/content/downloads/23/16/047-96015-A_F2ZJ8P7940/aknn1yshpkeeg1l3hgz7saai1d0zguw31y/InstallAssistant.pkg", "InstallAssistant14.pkg"),
                 [SelectedOS.MacOS13] = ("https://swcdn.apple.com/content/downloads/09/46/093-22004-A_QNZEDC334I/phigx2zvoggml6sh79my4y51fnvgy8hix4/InstallAssistant.pkg", "InstallAssistant13.pkg"),
@@ -419,5 +422,7 @@ namespace GetThatOS.Main
 
         private void textBox1_TextChanged(object sender, EventArgs e) { }
         private void label10_Click(object sender, EventArgs e) { }
+
+       
     }
 }

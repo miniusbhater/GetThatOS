@@ -94,6 +94,7 @@
             button51 = new Button();
             button52 = new Button();
             button53 = new Button();
+            button4 = new Button();
             label8 = new Label();
             button11 = new Button();
             label10 = new Label();
@@ -509,6 +510,7 @@
             flowLayoutPanel3.Controls.Add(button51);
             flowLayoutPanel3.Controls.Add(button52);
             flowLayoutPanel3.Controls.Add(button53);
+            flowLayoutPanel3.Controls.Add(button4);
             flowLayoutPanel3.Enabled = false;
             flowLayoutPanel3.Location = new Point(172, 53);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
@@ -846,6 +848,17 @@
             button53.UseVisualStyleBackColor = true;
             button53.Click += button53_Click;
             // 
+            // button4
+            // 
+            button4.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.Location = new Point(3, 1653);
+            button4.Name = "button4";
+            button4.Size = new Size(130, 49);
+            button4.TabIndex = 31;
+            button4.Text = "MacOS 26";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click_1;
+            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -989,5 +1002,6 @@
         private Label label8;
         private Button button11;
         private Label label10;
+        private Button button4;
     }
 }
