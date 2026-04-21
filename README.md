@@ -15,8 +15,6 @@ A simple and user friendly tool for downloading Operating system disk images
 
 
 
-
-#### Thank you to [xenonorsomething](https://github.com/XenonOrSomething) for the logo!
 #### Some images now come from Internet Archive
 
 
