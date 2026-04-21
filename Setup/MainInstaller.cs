@@ -79,6 +79,16 @@ namespace GetThatOSSetup
                 webclient2.DownloadFile(new Uri(download2), output2);
             }
 
+            string download27 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/MacGlass_logo.ico";
+            string output27 = Path.Combine(CreateFolder1, "MacGlass_logo.ico");
+            label7.Text = ($"Downloading: {download27}");
+            label7.Refresh();
+
+            using (WebClient webclient27 = new WebClient())
+            {
+                webclient27.DownloadFile(new Uri(download27), output27);
+            }
+
             string download3 = "https://github.com/miniusbhater/GetThatOS/raw/main/GetThatOS%20Resources/LogosAndImages/MacModern_logo.ico";
             string output3 = Path.Combine(CreateFolder1, "MacModern_logo.ico");
             label7.Text = ($"Downloading: {download3}");
