@@ -203,7 +203,7 @@
             button3.Name = "button3";
             button3.Size = new Size(130, 49);
             button3.TabIndex = 2;
-            button3.Text = "MacOS";
+            button3.Text = "macOS";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
@@ -525,7 +525,7 @@
             button24.Name = "button24";
             button24.Size = new Size(130, 49);
             button24.TabIndex = 0;
-            button24.Text = "MacOS 15";
+            button24.Text = "macOS 15";
             button24.UseVisualStyleBackColor = true;
             button24.Click += button24_Click;
             // 
@@ -536,7 +536,7 @@
             button25.Name = "button25";
             button25.Size = new Size(130, 49);
             button25.TabIndex = 1;
-            button25.Text = "MacOS 14";
+            button25.Text = "macOS 14";
             button25.UseVisualStyleBackColor = true;
             button25.Click += button25_Click;
             // 
@@ -547,7 +547,7 @@
             button26.Name = "button26";
             button26.Size = new Size(130, 49);
             button26.TabIndex = 2;
-            button26.Text = "MacOS 13";
+            button26.Text = "macOS 13";
             button26.UseVisualStyleBackColor = true;
             button26.Click += button26_Click;
             // 
@@ -558,7 +558,7 @@
             button27.Name = "button27";
             button27.Size = new Size(130, 49);
             button27.TabIndex = 3;
-            button27.Text = "MacOS 12";
+            button27.Text = "macOS 12";
             button27.UseVisualStyleBackColor = true;
             button27.Click += button27_Click;
             // 
@@ -569,7 +569,7 @@
             button28.Name = "button28";
             button28.Size = new Size(130, 49);
             button28.TabIndex = 4;
-            button28.Text = "MacOS 11";
+            button28.Text = "macOS 11";
             button28.UseVisualStyleBackColor = true;
             button28.Click += button28_Click;
             // 
@@ -580,7 +580,7 @@
             button29.Name = "button29";
             button29.Size = new Size(130, 49);
             button29.TabIndex = 6;
-            button29.Text = "MacOS 10.15";
+            button29.Text = "macOS 10.15";
             button29.UseVisualStyleBackColor = true;
             button29.Click += button29_Click;
             // 
@@ -591,7 +591,7 @@
             button30.Name = "button30";
             button30.Size = new Size(130, 49);
             button30.TabIndex = 7;
-            button30.Text = "MacOS 10.14";
+            button30.Text = "macOS 10.14";
             button30.UseVisualStyleBackColor = true;
             button30.Click += button30_Click;
             // 
@@ -602,7 +602,7 @@
             button31.Name = "button31";
             button31.Size = new Size(130, 49);
             button31.TabIndex = 8;
-            button31.Text = "MacOS 10.13";
+            button31.Text = "macOS 10.13";
             button31.UseVisualStyleBackColor = true;
             button31.Click += button31_Click;
             // 
@@ -613,7 +613,7 @@
             button32.Name = "button32";
             button32.Size = new Size(130, 49);
             button32.TabIndex = 9;
-            button32.Text = "MacOS 10.12";
+            button32.Text = "macOS 10.12";
             button32.UseVisualStyleBackColor = true;
             button32.Click += button32_Click;
             // 
@@ -624,7 +624,7 @@
             button33.Name = "button33";
             button33.Size = new Size(130, 49);
             button33.TabIndex = 10;
-            button33.Text = "MacOS 10.11";
+            button33.Text = "macOS 10.11";
             button33.UseVisualStyleBackColor = true;
             button33.Click += button33_Click;
             // 
@@ -635,7 +635,7 @@
             button34.Name = "button34";
             button34.Size = new Size(130, 49);
             button34.TabIndex = 11;
-            button34.Text = "MacOS 10.10";
+            button34.Text = "macOS 10.10";
             button34.UseVisualStyleBackColor = true;
             button34.Click += button34_Click;
             // 
@@ -646,7 +646,7 @@
             button35.Name = "button35";
             button35.Size = new Size(130, 49);
             button35.TabIndex = 12;
-            button35.Text = "MacOS 10.9";
+            button35.Text = "macOS 10.9";
             button35.UseVisualStyleBackColor = true;
             button35.Click += button35_Click;
             // 
@@ -657,7 +657,7 @@
             button36.Name = "button36";
             button36.Size = new Size(130, 49);
             button36.TabIndex = 13;
-            button36.Text = "MacOS 10.8";
+            button36.Text = "macOS 10.8";
             button36.UseVisualStyleBackColor = true;
             button36.Click += button36_Click;
             // 
@@ -668,7 +668,7 @@
             button37.Name = "button37";
             button37.Size = new Size(130, 49);
             button37.TabIndex = 14;
-            button37.Text = "MacOS 10.7";
+            button37.Text = "macOS 10.7";
             button37.UseVisualStyleBackColor = true;
             button37.Click += button37_Click;
             // 
@@ -679,7 +679,7 @@
             button38.Name = "button38";
             button38.Size = new Size(130, 49);
             button38.TabIndex = 15;
-            button38.Text = "MacOS 10.6";
+            button38.Text = "macOS 10.6";
             button38.UseVisualStyleBackColor = true;
             button38.Click += button38_Click;
             // 
@@ -690,7 +690,7 @@
             button39.Name = "button39";
             button39.Size = new Size(130, 49);
             button39.TabIndex = 16;
-            button39.Text = "MacOS 10.5";
+            button39.Text = "macOS 10.5";
             button39.UseVisualStyleBackColor = true;
             button39.Click += button39_Click;
             // 
@@ -701,7 +701,7 @@
             button40.Name = "button40";
             button40.Size = new Size(130, 49);
             button40.TabIndex = 17;
-            button40.Text = "MacOS 10.4";
+            button40.Text = "macOS 10.4";
             button40.UseVisualStyleBackColor = true;
             button40.Click += button40_Click;
             // 
@@ -712,7 +712,7 @@
             button41.Name = "button41";
             button41.Size = new Size(130, 49);
             button41.TabIndex = 18;
-            button41.Text = "MacOS 10.3";
+            button41.Text = "macOS 10.3";
             button41.UseVisualStyleBackColor = true;
             button41.Click += button41_Click;
             // 
@@ -723,7 +723,7 @@
             button42.Name = "button42";
             button42.Size = new Size(130, 49);
             button42.TabIndex = 19;
-            button42.Text = "MacOS 10.2";
+            button42.Text = "macOS 10.2";
             button42.UseVisualStyleBackColor = true;
             button42.Click += button42_Click;
             // 
@@ -734,7 +734,7 @@
             button43.Name = "button43";
             button43.Size = new Size(130, 49);
             button43.TabIndex = 20;
-            button43.Text = "MacOS 10.1";
+            button43.Text = "macOS 10.1";
             button43.UseVisualStyleBackColor = true;
             button43.Click += button43_Click;
             // 
@@ -745,7 +745,7 @@
             button44.Name = "button44";
             button44.Size = new Size(130, 49);
             button44.TabIndex = 21;
-            button44.Text = "MacOS 10.0";
+            button44.Text = "macOS 10.0";
             button44.UseVisualStyleBackColor = true;
             button44.Click += button44_Click;
             // 
@@ -756,7 +756,7 @@
             button45.Name = "button45";
             button45.Size = new Size(130, 49);
             button45.TabIndex = 22;
-            button45.Text = "MacOS 9";
+            button45.Text = "macOS 9";
             button45.UseVisualStyleBackColor = true;
             button45.Click += button45_Click;
             // 
@@ -767,7 +767,7 @@
             button46.Name = "button46";
             button46.Size = new Size(130, 49);
             button46.TabIndex = 23;
-            button46.Text = "MacOS 8";
+            button46.Text = "macOS 8";
             button46.UseVisualStyleBackColor = true;
             button46.Click += button46_Click;
             // 
@@ -778,7 +778,7 @@
             button47.Name = "button47";
             button47.Size = new Size(130, 49);
             button47.TabIndex = 24;
-            button47.Text = "MacOS 7";
+            button47.Text = "macOS 7";
             button47.UseVisualStyleBackColor = true;
             button47.Click += button47_Click;
             // 
@@ -855,7 +855,7 @@
             button4.Name = "button4";
             button4.Size = new Size(130, 49);
             button4.TabIndex = 31;
-            button4.Text = "MacOS 26";
+            button4.Text = "macOS 26";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click_1;
             // 

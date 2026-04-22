@@ -39,7 +39,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.3.3");
+            Console.WriteLine("0.3.4");
             InitializeComponent();
         }
 
@@ -49,7 +49,7 @@ namespace GetThatOS.Main
             DisableUnwantedText();
             DisableUnwantedButtons();
             GetDocs();
-            this.Text = $"GetThatOS 0.3.3 | {Environment.OSVersion}";
+            this.Text = $"GetThatOS 0.3.4 | {Environment.OSVersion}";
             flowLayoutPanel3.Controls.SetChildIndex(button4, 0);
         }
 
@@ -344,7 +344,7 @@ namespace GetThatOS.Main
 
             if (appStore.TryGetValue(_selectedOS, out string storeUrl))
             {
-                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
+                MessageBox.Show("This will open a link to App Store\nPress Ok to continue");
                 Process.Start(new ProcessStartInfo { FileName = storeUrl, UseShellExecute = true });
                 return;
             }
@@ -354,7 +354,7 @@ namespace GetThatOS.Main
                 label10.Visible = true;
                 label10.Text = $"Downloading: {single.url}";
                 label10.Refresh();
-                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
+                Task.Run(() => MessageBox.Show("The download has started\ndepending on the size of the installer\nit may take a while for the progress to move"));
                 DownloadFileWithProgress(single.url, Path.Combine(directory, single.filename), () =>
                 {
                     MessageBox.Show("Download complete");
@@ -368,7 +368,7 @@ namespace GetThatOS.Main
                 label10.Visible = true;
                 label10.Text = $"Downloading: {multi.label}";
                 label10.Refresh();
-                MessageBox.Show("Download starting\nit may look like nothing is happening\ndepending on the size of the installer\nit may take a while for the progress to move\nPress Ok to continue");
+                Task.Run(() => MessageBox.Show("The download has started\ndepending on the size of the installer\nit may take a while for the progress to move"));
                 DownloadFilesTogether(multi.files, directory, 0, () =>
                 {
                     MessageBox.Show("Download complete");

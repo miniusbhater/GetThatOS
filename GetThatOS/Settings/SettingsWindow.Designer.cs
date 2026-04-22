@@ -57,7 +57,7 @@
             label2.Name = "label2";
             label2.Size = new Size(38, 17);
             label2.TabIndex = 2;
-            label2.Text = "0.3.3";
+            label2.Text = "0.3.4";
             // 
             // button1
             // 
@@ -118,7 +118,7 @@
             MaximizeBox = false;
             Name = "SettingsWindow";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "GetThatOS";
+            Text = "GetThatOS Settings";
             Load += SettingsWindow_Load;
             ResumeLayout(false);
             PerformLayout();
