@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::cout << "GetThatIntegrity 1.0.2\n";
+    std::cout << "GetThatIntegrity 1.0.4\n";
     std::cout << "Beginning checks\n";
     std:: string rootDir = "C:\\Program Files (x86)\\GetThatOS\\";
     std:: string imgDir = "C:\\Program Files (x86)\\GetThatOS\\LogosAndImages\\";
@@ -82,6 +82,21 @@ int main()
         std::cout << "\nFile does not exist\n";
         std::cout << "\nPlease re install GetThatOS\n";
         char ch4 = _getch();
+        exit(1);
+    }
+
+    // MacGlass
+    std::string chkFr26 = imgDir + "MacGlass_logo.ico";
+    std::cout << chkFr26;
+    std::ifstream file26(chkFr26);
+
+    if (file26.good()) {
+        std::cout << "\nFile exists\n";
+    }
+    else {
+        std::cout << "\nFile does not exist\n";
+        std::cout << "\nPlease re install GetThatOS\n";
+        char ch26 = _getch();
         exit(1);
     }
 
@@ -401,9 +416,23 @@ int main()
         exit(1);
     }
 
+    // GetThatOSLauncher
+    std::string chkFr27 = rootDir + "GetThatOSLauncher.exe";
+    std::cout << chkFr27;
+    std::ifstream file27(chkFr27);
 
-    std::cout << "\nAll files validated\nPress any key to exit";
-    char ch25 = _getch();
+    if (file27.good()) {
+        std::cout << "\nFile exists\n";
+    }
+    else {
+        std::cout << "\nFile does not exist\n";
+        std::cout << "\nPlease re install GetThatOS\n";
+        char ch27 = _getch();
+        exit(1);
+    }
+
+
+    system("start GetThatOS.exe");
     return 0;
 }
 
