@@ -84,7 +84,7 @@
             label4.Name = "label4";
             label4.Size = new Size(75, 15);
             label4.TabIndex = 5;
-            label4.Text = "Installer 1.0.0";
+            label4.Text = "Installer 1.0.1";
             // 
             // label5
             // 
@@ -134,7 +134,7 @@
             Name = "MainInstaller";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Setup - 1.0.0";
+            Text = "Setup - 1.0.1";
             Load += MainInstaller_Load;
             ResumeLayout(false);
             PerformLayout();

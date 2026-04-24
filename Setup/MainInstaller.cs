@@ -342,13 +342,26 @@ namespace GetThatOSSetup
                 webclient26.DownloadFile(new Uri(download26), output26);
             }
 
+            label5.Text = ("Downloading GetThatUpdate");
+            label5.Refresh();
+
+            string download28 = "https://github.com/miniusbhater/GetThatOS/raw/main/Executables/GetThatOSLauncher.exe";
+            string output28 = Path.Combine(CreateFolder, "GetThatOSLauncher.exe");
+            label7.Text = ($"Downloading: {download28}");
+            label7.Refresh();
+
+            using (WebClient webclient28 = new WebClient())
+            {
+                webclient28.DownloadFile(new Uri(download28), output28);
+            }
+
 
 
 
             label5.Text = ("Creating start menu shortcut");
             label5.Refresh();
             string gosshortcut = "GetThatOS.lnk";
-            string target = @"C:\Program Files (x86)\GetThatOS\GetThatOS.exe";
+            string target = @"C:\Program Files (x86)\GetThatOS\GetThatOSLauncher.exe";
             string start = Environment.GetFolderPath(Environment.SpecialFolder.StartMenu);
             string shortcutpath = Path.Combine(start, "Programs", gosshortcut);           
             WshShell shell = new WshShell();
