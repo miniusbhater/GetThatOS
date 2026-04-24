@@ -39,5 +39,10 @@ namespace GetThatOS.Settings
             string path = Environment.CurrentDirectory + "\\GetThatIntegrity.exe";
             Process.Start(path);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo { FileName = "https://discord.gg/4ZnDNuAWma", UseShellExecute = true });
+        }
     }
 }

@@ -40,7 +40,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.3.6");
+            Console.WriteLine("0.3.7");
             InitializeComponent();
         }
 
@@ -50,7 +50,7 @@ namespace GetThatOS.Main
             DisableUnwantedText();
             DisableUnwantedButtons();
             GetDocs();
-            this.Text = $"GetThatOS 0.3.6 | {Environment.OSVersion}";
+            this.Text = $"GetThatOS 0.3.7 | {Environment.OSVersion}";
             flowLayoutPanel3.Controls.SetChildIndex(button4, 0);
         }
 

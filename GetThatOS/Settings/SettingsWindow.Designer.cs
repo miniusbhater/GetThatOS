@@ -57,7 +57,7 @@
             label2.Name = "label2";
             label2.Size = new Size(38, 17);
             label2.TabIndex = 2;
-            label2.Text = "0.3.6";
+            label2.Text = "0.3.7";
             // 
             // button1
             // 
@@ -90,6 +90,7 @@
             button3.TabIndex = 5;
             button3.Text = "Help";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
