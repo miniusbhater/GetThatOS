@@ -30,6 +30,7 @@ namespace GetThatOS.Main
 
         private SelectedOS _selectedOS = SelectedOS.None;
 
+
         private string LogoPath(string filename)
         {
             string programFiles = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86);
@@ -39,7 +40,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.3.5");
+            Console.WriteLine("0.3.6");
             InitializeComponent();
         }
 
@@ -49,7 +50,7 @@ namespace GetThatOS.Main
             DisableUnwantedText();
             DisableUnwantedButtons();
             GetDocs();
-            this.Text = $"GetThatOS 0.3.5 | {Environment.OSVersion}";
+            this.Text = $"GetThatOS 0.3.6 | {Environment.OSVersion}";
             flowLayoutPanel3.Controls.SetChildIndex(button4, 0);
         }
 
@@ -354,7 +355,6 @@ namespace GetThatOS.Main
                 label10.Visible = true;
                 label10.Text = $"Downloading: {single.url}";
                 label10.Refresh();
-                Task.Run(() => MessageBox.Show("The download has started\ndepending on the size of the installer\nit may take a while for the progress to move"));
                 DownloadFileWithProgress(single.url, Path.Combine(directory, single.filename), () =>
                 {
                     MessageBox.Show("Download complete");
@@ -368,7 +368,6 @@ namespace GetThatOS.Main
                 label10.Visible = true;
                 label10.Text = $"Downloading: {multi.label}";
                 label10.Refresh();
-                Task.Run(() => MessageBox.Show("The download has started\ndepending on the size of the installer\nit may take a while for the progress to move"));
                 DownloadFilesTogether(multi.files, directory, 0, () =>
                 {
                     MessageBox.Show("Download complete");
@@ -396,6 +395,7 @@ namespace GetThatOS.Main
             DateTime lastTime = DateTime.UtcNow;
             label11.Visible = true;
             label12.Visible = true;
+            button12.Enabled = false;
 
             client.DownloadProgressChanged += (s, e) =>
             {
@@ -423,6 +423,7 @@ namespace GetThatOS.Main
                 label11.Visible = false;
                 label12.Visible = false;
                 progressBar1.Value = 0;
+                button12.Enabled = true;
                 client.Dispose();
                 completed?.Invoke();
             };
