@@ -40,7 +40,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.3.7");
+            Console.WriteLine("0.3.8");
             InitializeComponent();
         }
 
@@ -50,7 +50,7 @@ namespace GetThatOS.Main
             DisableUnwantedText();
             DisableUnwantedButtons();
             GetDocs();
-            this.Text = $"GetThatOS 0.3.7 | {Environment.OSVersion}";
+            this.Text = $"GetThatOS 0.3.8 | {Environment.OSVersion}";
             flowLayoutPanel3.Controls.SetChildIndex(button4, 0);
         }
 
@@ -244,6 +244,9 @@ namespace GetThatOS.Main
                 [SelectedOS.MacOS13] = ("https://swcdn.apple.com/content/downloads/09/46/093-22004-A_QNZEDC334I/phigx2zvoggml6sh79my4y51fnvgy8hix4/InstallAssistant.pkg", "InstallAssistant13.pkg"),
                 [SelectedOS.MacOS12] = ("https://swcdn.apple.com/content/downloads/46/57/052-60131-A_KM2RH04C2D/9yzvba1uvpem2wuo95r459qno57qaizwf2/InstallAssistant.pkg", "InstallAssistant12.pkg"),
                 [SelectedOS.MacOS11] = ("http://swcdn.apple.com/content/downloads/14/38/042-45246-A_NLFOFLCJFZ/jk992zbv98sdzz3rgc7mrccjl3l22ruk1c/InstallAssistant.pkg", "InstallAssistant11.pkg"),
+                [SelectedOS.MacOS10_15] = ("https://archive.org/download/macOS-X-images/Catalina%2010.15.dmg", "macOSCatalina.dmg"),
+                [SelectedOS.MacOS10_14] = ("https://archive.org/download/macOS-X-images/Mojave%2010.14.dmg", "macOSMojave.dmg"),
+                [SelectedOS.MacOS10_13] = ("https://archive.org/download/macOS-X-images/High%20Sierra%2010.13.dmg", "macOSHighSierra.dmg"),
                 [SelectedOS.MacOS10_12] = ("http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg", "InstallMacOSX10.12.dmg"),
                 [SelectedOS.MacOS10_11] = ("http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg", "InstallMacOSX10.11.dmg"),
                 [SelectedOS.MacOS10_10] = ("http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg", "InstallMacOSX10.10.dmg"),
@@ -260,14 +263,7 @@ namespace GetThatOS.Main
                 [SelectedOS.MacOS10_0] = ("https://github.com/miniusbhater/diskimages/releases/download/osx10.0/osx-10.0.iso", "osx-10.0.iso"),
                 [SelectedOS.MacOS2] = ("https://github.com/miniusbhater/diskimages/releases/download/sys2/System.Disk.img", "System.Disk.System.Software.2.img"),
                 [SelectedOS.MacOS] = ("https://github.com/miniusbhater/diskimages/releases/download/sys1/System.Disk.img", "System.Disk.img"),
-            };
-
-            var appStore = new Dictionary<SelectedOS, string>
-            {
-                [SelectedOS.MacOS10_15] = "https://apps.apple.com/us/app/macos-catalina/id1466841314?mt=12",
-                [SelectedOS.MacOS10_14] = "https://apps.apple.com/us/app/macos-mojave/id1398502828?mt=12",
-                [SelectedOS.MacOS10_13] = "https://itunes.apple.com/us/app/macos-high-sierra/id1246284741",
-            };
+            };   
 
             var multiDownloads = new Dictionary<SelectedOS, (string label, (string url, string file)[] files)>
             {
@@ -342,13 +338,6 @@ namespace GetThatOS.Main
                     ("https://github.com/miniusbhater/diskimages/releases/download/3/Utilities.1.0.img",           "Utilities.1.0.img"),
                 }),
             };
-
-            if (appStore.TryGetValue(_selectedOS, out string storeUrl))
-            {
-                MessageBox.Show("This will open a link to App Store\nPress Ok to continue");
-                Process.Start(new ProcessStartInfo { FileName = storeUrl, UseShellExecute = true });
-                return;
-            }
 
             if (singleDownloads.TryGetValue(_selectedOS, out var single))
             {
