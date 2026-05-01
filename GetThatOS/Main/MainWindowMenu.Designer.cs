@@ -465,6 +465,8 @@
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(237, 23);
             progressBar1.TabIndex = 16;
+            progressBar1.Visible = false;
+            progressBar1.Click += progressBar1_Click;
             // 
             // flowLayoutPanel3
             // 

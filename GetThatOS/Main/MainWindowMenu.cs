@@ -40,7 +40,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.3.8");
+            Console.WriteLine("0.3.9");
             InitializeComponent();
         }
 
@@ -50,7 +50,7 @@ namespace GetThatOS.Main
             DisableUnwantedText();
             DisableUnwantedButtons();
             GetDocs();
-            this.Text = $"GetThatOS 0.3.8 | {Environment.OSVersion}";
+            this.Text = $"GetThatOS 0.3.9 | {Environment.OSVersion}";
             flowLayoutPanel3.Controls.SetChildIndex(button4, 0);
         }
 
@@ -263,7 +263,7 @@ namespace GetThatOS.Main
                 [SelectedOS.MacOS10_0] = ("https://github.com/miniusbhater/diskimages/releases/download/osx10.0/osx-10.0.iso", "osx-10.0.iso"),
                 [SelectedOS.MacOS2] = ("https://github.com/miniusbhater/diskimages/releases/download/sys2/System.Disk.img", "System.Disk.System.Software.2.img"),
                 [SelectedOS.MacOS] = ("https://github.com/miniusbhater/diskimages/releases/download/sys1/System.Disk.img", "System.Disk.img"),
-            };   
+            };
 
             var multiDownloads = new Dictionary<SelectedOS, (string label, (string url, string file)[] files)>
             {
@@ -384,6 +384,7 @@ namespace GetThatOS.Main
             DateTime lastTime = DateTime.UtcNow;
             label11.Visible = true;
             label12.Visible = true;
+            progressBar1.Visible = true;
             button12.Enabled = false;
 
             client.DownloadProgressChanged += (s, e) =>
@@ -412,6 +413,7 @@ namespace GetThatOS.Main
                 label11.Visible = false;
                 label12.Visible = false;
                 progressBar1.Value = 0;
+                progressBar1.Visible = false;
                 button12.Enabled = true;
                 client.Dispose();
                 completed?.Invoke();
@@ -438,6 +440,11 @@ namespace GetThatOS.Main
         private void label10_Click(object sender, EventArgs e) { }
 
         private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
         {
 
         }
