@@ -21,7 +21,9 @@ A simple and user friendly tool for downloading Operating system disk images
 
 
 ## Project updates
-[20/04.2026] I have rewritten GetThatOS so it is no longer 2.8k lines and is now 400 
+[02/05/2026] A 1.0.0 release is getting near
+
+[20/04/2026] I have rewritten GetThatOS so it is no longer 2.8k lines and is now 400 
 
 [07/04/2026] Now releasing a horribly coded build i made back in july last year :) (gui)
 
