@@ -11,6 +11,8 @@ using GetThatOS.Settings;
 // This code was horrible and now its sort of not!!
 // I couldn't understand my own code half the time so this should make future updates easier :sob:
 // Maybe its just because im shit at this
+// At some point i do plan to not have all the code in one file but if it works it works
+
 namespace GetThatOS.Main
 {
     public partial class MainWindowMenu : Form
@@ -40,7 +42,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.3.9");
+            Console.WriteLine("0.4.0");
             InitializeComponent();
         }
 
@@ -50,8 +52,45 @@ namespace GetThatOS.Main
             DisableUnwantedText();
             DisableUnwantedButtons();
             GetDocs();
-            this.Text = $"GetThatOS 0.3.9 | {Environment.OSVersion}";
+            updateCheck();
+            this.Text = $"GetThatOS 0.4.0 | {Environment.OSVersion}";
             flowLayoutPanel3.Controls.SetChildIndex(button4, 0);
+        }
+
+        public async void updateCheck() // code from miniusbhater/SierraOSHelper/blob/main/SierraOSHelper/Log.cs
+        {
+            string current = "0.4.0";
+            try
+            {
+                string gistUrl = "https://gist.githubusercontent.com/miniusbhater/8c54ee1658f95d84fc2a6cb0c1cb3de3/raw/5c2aa7eb533a323004416da6a39a89739fb78c79/gistfile1.txt";
+                using HttpClient httpClient = new HttpClient();
+                string version = await httpClient.GetStringAsync(gistUrl);          
+                Version currentVersion = new Version(current);
+                Version latestVersion = new Version(version);
+                int uptodate = currentVersion.CompareTo(latestVersion);
+                if (uptodate < 0)
+                {
+                    label10.Enabled = true;
+                    label10.Visible = true;
+                    label10.Text = $"New version available: {version}";
+                    DialogResult result = MessageBox.Show($"Version {version} is available now!\nWould you like to go download it? ", "Update Available", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    if (result == DialogResult.Yes)
+                    {
+                        string url = "https://github.com/miniusbhater/GetThatOS/releases/latest";
+                        ProcessStartInfo psi = new ProcessStartInfo
+                        {
+                            FileName = url,
+                            UseShellExecute = true
+                        };
+                        Process.Start(psi);
+                        Environment.Exit(0);
+                    }               
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Failed to check for updates!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public void GetDocs()
@@ -229,10 +268,10 @@ namespace GetThatOS.Main
             {
                 [SelectedOS.Windows11] = ("https://archive.org/download/windows-11-24h2-iso_202501/Win11_24H2_English_x64.iso", "Windows11.iso"),
                 [SelectedOS.Windows10] = ("https://archive.org/download/windows-10-22h2-englishus/Win10_22H2_English_x64.iso", "Windows10.iso"),
-                [SelectedOS.Windows81] = ("https://archive.org/download/win-8.1-english-x-64-x-86/Win8.1_English_x64.iso", "Windows8-1.iso"),
-                [SelectedOS.Windows8] = ("https://archive.org/download/windows-8-x-64/Windows%208%20x64.iso", "Windows8.iso"),
-                [SelectedOS.Windows7] = ("https://archive.org/download/Windows7-iso/win7_64_bit.iso", "Windows7.iso"),
-                [SelectedOS.WindowsVista] = ("https://archive.org/download/windows-vista-64bit_202303/Windows_Vista_64bit.iso", "WindowsVista.iso"),
+                [SelectedOS.Windows81] = ("https://archive.org/download/win-8.1/Win8.1_EnglishUS_x64.iso", "Windows8-1.iso"),
+                [SelectedOS.Windows8] = ("https://archive.org/download/windows-8-x-64_202408/Windows%208%20x64.iso", "Windows8.iso"),
+                [SelectedOS.Windows7] = ("https://ia800609.us.archive.org/1/items/windows-7-ultimate-x-64-sp-1-fully-updated/Windows%207%20Ultimate%20x64%20-%20SP1%20%28Fully%20Updated%29.iso", "Windows7.iso"),
+                [SelectedOS.WindowsVista] = ("https://archive.org/download/windows-server-2022-x-64/Windows%20Vista%20x64.iso", "WindowsVista.iso"),
                 [SelectedOS.WindowsXP] = ("https://archive.org/download/WinXPProSP3x86/en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso", "WindowsXP.iso"),
                 [SelectedOS.WindowsME] = ("https://github.com/miniusbhater/diskimages/releases/download/me/Windows.Me.115.-.OEM.Full.iso", "WindowsME.iso"),
                 [SelectedOS.Windows2000] = ("https://github.com/miniusbhater/diskimages/releases/download/2k/5.00.2195.1_x86fre_Professional_en-us-W2PFPP_EN.iso", "Win2k.iso"),
@@ -419,7 +458,14 @@ namespace GetThatOS.Main
                 completed?.Invoke();
             };
 
-            client.DownloadFileAsync(new Uri(url), path);
+            try
+            {
+                client.DownloadFileAsync(new Uri(url), path);
+            }
+            catch 
+            {
+                MessageBox.Show("Download Failed!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button10_Click(object sender, EventArgs e)
