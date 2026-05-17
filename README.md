@@ -21,6 +21,29 @@ A simple and user friendly tool for downloading Operating system disk images
 
 
 
+## FAQ
+
+#### •How do i know these disk images have not been tampered with?
+
+To put it straight, you don't. BUT all these images are straight from their original website and have not been touched. I would also like to take this opportunity to say please don't download disk images from random shady websites. You don't know what is in those images and it's best not to download them and find out.
+
+
+
+
+#### •Where is *your favourite os*?
+
+I cannot add every single OS ever to exit. If there is one that you desperately need added for whatever reason then find some way to reach out to me and i might just add it for you. I will not be providing ways to reach out, you may find a way by yourself.
+
+
+
+
+#### What if an image does not work?
+
+All images have been tested by me in VMware to ensure that they work exept for a couple that i tested in parallels desktop. But if an image does not work please create an issue and i will fix it ASAP.
+
+
+
+
 ## Project updates
 [02/05/2026] A 1.0.0 release is getting near
 
@@ -41,22 +64,3 @@ A simple and user friendly tool for downloading Operating system disk images
 
 
 
-## FAQ
-
-#### •How do i know these disk images have not been tampered with?
-
-To put it straight, you don't. BUT all these images are straight from their original website and have not been touched. I would also like to take this opportunity to say please don't download disk images from random shady websites. You don't know what is in those images and it's best not to download them and find out.
-
-
-
-
-#### •Where is *your favourite os*?
-
-I cannot add every single OS ever to exit. If there is one that you desperately need added for whatever reason then find some way to reach out to me and i might just add it for you. I will not be providing ways to reach out, you may find a way by yourself.
-
-
-
-
-#### What if an image does not work?
-
-All images have been tested by me in VMware to ensure that they work exept for a couple that i tested in parallels desktop. But if an image does not work please create an issue and i will fix it ASAP.
