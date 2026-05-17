@@ -16,6 +16,7 @@ A simple and user friendly tool for downloading Operating system disk images
 
 
 #### Some images now come from Internet Archive
+#### Requires .Net 8 Runtime or later
 
 
 
