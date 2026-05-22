@@ -95,10 +95,10 @@
             button53 = new Button();
             button4 = new Button();
             label8 = new Label();
-            button11 = new Button();
             label10 = new Label();
             label11 = new Label();
             label12 = new Label();
+            button11 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -859,18 +859,6 @@
             label8.Size = new Size(0, 15);
             label8.TabIndex = 12;
             // 
-            // button11
-            // 
-            button11.BackColor = Color.White;
-            button11.ForeColor = Color.Black;
-            button11.Location = new Point(554, 257);
-            button11.Name = "button11";
-            button11.Size = new Size(75, 23);
-            button11.TabIndex = 11;
-            button11.Text = "Info";
-            button11.UseVisualStyleBackColor = false;
-            button11.Click += button11_Click;
-            // 
             // label10
             // 
             label10.AutoSize = true;
@@ -905,6 +893,19 @@
             label12.TabIndex = 20;
             label12.Text = "percent";
             label12.Visible = false;
+            // 
+            // button11
+            // 
+            button11.BackColor = Color.White;
+            button11.FlatAppearance.BorderSize = 0;
+            button11.FlatStyle = FlatStyle.Flat;
+            button11.ForeColor = Color.Black;
+            button11.Location = new Point(619, 354);
+            button11.Name = "button11";
+            button11.Size = new Size(10, 10);
+            button11.TabIndex = 11;
+            button11.UseVisualStyleBackColor = false;
+            button11.Click += button11_Click;
             // 
             // MainWindowMenu
             // 
@@ -1015,10 +1016,10 @@
         private Button button52;
         private Button button53;
         private Label label8;
-        private Button button11;
         private Label label10;
         private Button button4;
         private Label label11;
         private Label label12;
+        private Button button11;
     }
 }
