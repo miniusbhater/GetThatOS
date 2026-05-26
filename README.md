@@ -45,7 +45,7 @@ All images have been tested by me in VMware to ensure that they work exept for a
 
 
 ## Project updates
-[26/05/2026] I have began porting GetThatOS to eto.form. It will probably be a while before i actually release this version which will be fully cross platform with windows,mac and linux. I will try to also push updates to the current winforms version as regularly as i currently do.
+[26/05/2026] I have began porting GetThatOS to eto.forms. It will probably be a while before i actually release this version which will be fully cross platform with windows,mac and linux. I will try to also push updates to the current winforms version as regularly as i currently do.
 
 [02/05/2026] A 1.0.0 release is getting near
 
