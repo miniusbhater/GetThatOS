@@ -23,7 +23,7 @@ namespace GetThatOS.Main
             Windows11, Windows10, Windows81, Windows8, Windows7, WindowsVista,
             WindowsXP, WindowsME, Windows2000, Windows98, Windows95,
             Windows31, Windows3, Windows2, Windows,
-            MacOS26, MacOS15, MacOS14, MacOS13, MacOS12, MacOS11,
+            MacOS27, MacOS26, MacOS15, MacOS14, MacOS13, MacOS12, MacOS11,
             MacOS10_15, MacOS10_14, MacOS10_13, MacOS10_12, MacOS10_11,
             MacOS10_10, MacOS10_9, MacOS10_8, MacOS10_7, MacOS10_6,
             MacOS10_5, MacOS10_4, MacOS10_3, MacOS10_2, MacOS10_1, MacOS10_0,
@@ -42,7 +42,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.4.1");
+            Console.WriteLine("0.4.2");
             InitializeComponent();
         }
 
@@ -53,18 +53,19 @@ namespace GetThatOS.Main
             DisableUnwantedButtons();
             GetDocs();
             updateCheck();
-            this.Text = $"GetThatOS 0.4.1 | {Environment.OSVersion}";
-            flowLayoutPanel3.Controls.SetChildIndex(button4, 0);
+            this.Text = $"GetThatOS 0.4.2 | {Environment.OSVersion}";
+            flowLayoutPanel3.Controls.SetChildIndex(button2, 0);
+            flowLayoutPanel3.Controls.SetChildIndex(button4, 1);
         }
 
         public async void updateCheck() // code from miniusbhater/SierraOSHelper/blob/main/SierraOSHelper/Log.cs
         {
-            string current = "0.4.1";
+            string current = "0.4.2";
             try
             {
                 string gistUrl = "https://gist.githubusercontent.com/miniusbhater/8c54ee1658f95d84fc2a6cb0c1cb3de3/raw/5c2aa7eb533a323004416da6a39a89739fb78c79/gistfile1.txt";
                 using HttpClient httpClient = new HttpClient();
-                string version = await httpClient.GetStringAsync(gistUrl);          
+                string version = await httpClient.GetStringAsync(gistUrl);
                 Version currentVersion = new Version(current);
                 Version latestVersion = new Version(version);
                 int uptodate = currentVersion.CompareTo(latestVersion);
@@ -84,7 +85,7 @@ namespace GetThatOS.Main
                         };
                         Process.Start(psi);
                         Environment.Exit(0);
-                    }               
+                    }
                 }
             }
             catch
@@ -223,6 +224,7 @@ namespace GetThatOS.Main
         private void button22_Click(object sender, EventArgs e) => SelectWindows("Windows_logo.ico", "Windows", SelectedOS.Windows);
 
         // macOS version selectiobn
+        private void button2_Click(object sender, EventArgs e) => SelectMacOS("MacGlass_logo.ico", "macOS 27", SelectedOS.MacOS27);
         private void button4_Click_1(object sender, EventArgs e) => SelectMacOS("MacGlass_logo.ico", "macOS 26", SelectedOS.MacOS26);
         private void button24_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "macOS 15", SelectedOS.MacOS15);
         private void button25_Click(object sender, EventArgs e) => SelectMacOS("MacModern_logo.ico", "macOS 14", SelectedOS.MacOS14);
@@ -277,7 +279,8 @@ namespace GetThatOS.Main
                 [SelectedOS.Windows2000] = ("https://github.com/miniusbhater/diskimages/releases/download/2k/5.00.2195.1_x86fre_Professional_en-us-W2PFPP_EN.iso", "Win2k.iso"),
                 [SelectedOS.Windows98] = ("https://github.com/miniusbhater/diskimages/releases/download/98/Windows.98.Second.Edition.iso", "Windows.98.Second.Edition.iso"),
                 [SelectedOS.Windows95] = ("https://github.com/miniusbhater/diskimages/releases/download/95/windows95b.iso", "windows95.iso"),
-                [SelectedOS.MacOS26] = ("https://swcdn.apple.com/content/downloads/51/26/122-77688-A_F01L27Y7Q6/7e8t8w89evbl6sgkoy9jhrmw2tqfkhjsd9/InstallAssistant.pkg", "InstallAssistant26.pkg"),
+                [SelectedOS.MacOS27] = ("https://swcdn.apple.com/content/downloads/57/01/140-17224-A_P1A9GDNMB4/u67ywguno7fkwggtvtzizznb1eimpgqy5k/InstallAssistant.pkg", "InstallAssistant27.pkg"),
+                [SelectedOS.MacOS26] = ("https://swcdn.apple.com/content/downloads/22/07/122-84023-A_RQPL3GX2L6/l6vt7agjz206oaiyhvc0a4wupeffjk36st/InstallAssistant.pkg", "InstallAssistant26.pkg"),
                 [SelectedOS.MacOS15] = ("https://swcdn.apple.com/content/downloads/08/08/122-77920-A_24DGKW16ZQ/p2g06dyhtgf9mgf2yt1p4ihzvkkk91qvlf/InstallAssistant.pkg", "InstallAssistant15.pkg"),
                 [SelectedOS.MacOS14] = ("https://swcdn.apple.com/content/downloads/61/03/122-77891-A_GYK4YJ2CRM/8xrsgsownndvprmza1q0cvbsppw3ohtk85/InstallAssistant.pkg", "InstallAssistant14.pkg"),
                 [SelectedOS.MacOS13] = ("https://swcdn.apple.com/content/downloads/09/46/093-22004-A_QNZEDC334I/phigx2zvoggml6sh79my4y51fnvgy8hix4/InstallAssistant.pkg", "InstallAssistant13.pkg"),
@@ -462,7 +465,7 @@ namespace GetThatOS.Main
             {
                 client.DownloadFileAsync(new Uri(url), path);
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Download Failed!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -494,5 +497,7 @@ namespace GetThatOS.Main
         {
 
         }
+
+        
     }
 }

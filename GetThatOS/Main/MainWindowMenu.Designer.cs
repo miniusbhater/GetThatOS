@@ -99,6 +99,7 @@
             label11 = new Label();
             label12 = new Label();
             button11 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
@@ -502,6 +503,7 @@
             flowLayoutPanel3.Controls.Add(button52);
             flowLayoutPanel3.Controls.Add(button53);
             flowLayoutPanel3.Controls.Add(button4);
+            flowLayoutPanel3.Controls.Add(button2);
             flowLayoutPanel3.Enabled = false;
             flowLayoutPanel3.Location = new Point(172, 53);
             flowLayoutPanel3.Name = "flowLayoutPanel3";
@@ -907,6 +909,17 @@
             button11.UseVisualStyleBackColor = false;
             button11.Click += button11_Click;
             // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.Location = new Point(3, 1708);
+            button2.Name = "button2";
+            button2.Size = new Size(130, 49);
+            button2.TabIndex = 32;
+            button2.Text = "macOS 27";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // MainWindowMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1021,5 +1034,6 @@
         private Label label11;
         private Label label12;
         private Button button11;
+        private Button button2;
     }
 }
