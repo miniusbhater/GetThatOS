@@ -42,7 +42,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.4.2");
+            Console.WriteLine("0.4.3");
             InitializeComponent();
         }
 
@@ -53,17 +53,17 @@ namespace GetThatOS.Main
             DisableUnwantedButtons();
             GetDocs();
             updateCheck();
-            this.Text = $"GetThatOS 0.4.2 | {Environment.OSVersion}";
+            this.Text = $"GetThatOS 0.4.3 | {Environment.OSVersion}";
             flowLayoutPanel3.Controls.SetChildIndex(button2, 0);
             flowLayoutPanel3.Controls.SetChildIndex(button4, 1);
         }
 
         public async void updateCheck() // code from miniusbhater/SierraOSHelper/blob/main/SierraOSHelper/Log.cs
         {
-            string current = "0.4.2";
+            string current = "0.4.3";
             try
             {
-                string gistUrl = "https://gist.githubusercontent.com/miniusbhater/8c54ee1658f95d84fc2a6cb0c1cb3de3/raw/5c2aa7eb533a323004416da6a39a89739fb78c79/gistfile1.txt";
+                string gistUrl = "https://gist.githubusercontent.com/miniusbhater/8c54ee1658f95d84fc2a6cb0c1cb3de3/raw/gistfile1.txt";
                 using HttpClient httpClient = new HttpClient();
                 string version = await httpClient.GetStringAsync(gistUrl);
                 Version currentVersion = new Version(current);
@@ -279,7 +279,7 @@ namespace GetThatOS.Main
                 [SelectedOS.Windows2000] = ("https://github.com/miniusbhater/diskimages/releases/download/2k/5.00.2195.1_x86fre_Professional_en-us-W2PFPP_EN.iso", "Win2k.iso"),
                 [SelectedOS.Windows98] = ("https://github.com/miniusbhater/diskimages/releases/download/98/Windows.98.Second.Edition.iso", "Windows.98.Second.Edition.iso"),
                 [SelectedOS.Windows95] = ("https://github.com/miniusbhater/diskimages/releases/download/95/windows95b.iso", "windows95.iso"),
-                [SelectedOS.MacOS27] = ("https://swcdn.apple.com/content/downloads/57/01/140-17224-A_P1A9GDNMB4/u67ywguno7fkwggtvtzizznb1eimpgqy5k/InstallAssistant.pkg", "InstallAssistant27.pkg"),
+                [SelectedOS.MacOS27] = ("https://swcdn.apple.com/content/downloads/08/22/140-31668-A_UOOEA5WMR8/yx13s8l4tygi9n1ar7rxhrhpn9t04wvk1n/InstallAssistant.pkg", "InstallAssistant27.pkg"),
                 [SelectedOS.MacOS26] = ("https://swcdn.apple.com/content/downloads/22/07/122-84023-A_RQPL3GX2L6/l6vt7agjz206oaiyhvc0a4wupeffjk36st/InstallAssistant.pkg", "InstallAssistant26.pkg"),
                 [SelectedOS.MacOS15] = ("https://swcdn.apple.com/content/downloads/08/08/122-77920-A_24DGKW16ZQ/p2g06dyhtgf9mgf2yt1p4ihzvkkk91qvlf/InstallAssistant.pkg", "InstallAssistant15.pkg"),
                 [SelectedOS.MacOS14] = ("https://swcdn.apple.com/content/downloads/61/03/122-77891-A_GYK4YJ2CRM/8xrsgsownndvprmza1q0cvbsppw3ohtk85/InstallAssistant.pkg", "InstallAssistant14.pkg"),
