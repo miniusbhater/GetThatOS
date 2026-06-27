@@ -42,7 +42,7 @@ namespace GetThatOS.Main
         public MainWindowMenu()
         {
             Console.WriteLine("GetThatOS");
-            Console.WriteLine("0.4.3");
+            Console.WriteLine("1.0.0");
             InitializeComponent();
         }
 
@@ -53,14 +53,14 @@ namespace GetThatOS.Main
             DisableUnwantedButtons();
             GetDocs();
             updateCheck();
-            this.Text = $"GetThatOS 0.4.3 | {Environment.OSVersion}";
+            this.Text = $"GetThatOS 1.0.0 | {Environment.OSVersion}";
             flowLayoutPanel3.Controls.SetChildIndex(button2, 0);
             flowLayoutPanel3.Controls.SetChildIndex(button4, 1);
         }
 
         public async void updateCheck() // code from miniusbhater/SierraOSHelper/blob/main/SierraOSHelper/Log.cs
         {
-            string current = "0.4.3";
+            string current = "1.0.0";
             try
             {
                 string gistUrl = "https://gist.githubusercontent.com/miniusbhater/8c54ee1658f95d84fc2a6cb0c1cb3de3/raw/gistfile1.txt";
@@ -70,7 +70,7 @@ namespace GetThatOS.Main
                 Version latestVersion = new Version(version);
                 int uptodate = currentVersion.CompareTo(latestVersion);
                 if (uptodate < 0)
-                {
+                {                                                                 // Might remove all this at some point lol
                     label10.Enabled = true;
                     label10.Visible = true;
                     label10.Text = $"New version available: {version}";
